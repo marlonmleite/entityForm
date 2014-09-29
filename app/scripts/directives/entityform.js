@@ -16,8 +16,18 @@ angular.module('entityFormApp')
 		controller: controllerFormItem,
 		templateUrl: 'views/directives/entityform.html',
 		restrict: 'E',
+		transclude: true,
 		scope: { 
 			metadata: '='
-		}
+		},
+		link: function(scope, element, attrs) {
+  			var transcludeElem = element.find('#transcludeEntityForm');
+
+  			if (transcludeElem.children().length == 0) {
+  				scope.hasChild = false;
+  			} else {
+  				scope.hasChild = true;
+  			}
+  		}
 	};
   });

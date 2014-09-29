@@ -1,5 +1,6 @@
-<form id="{{ metadata.name }}">
+<form id="{{ metadata.name }}" ng-if="!hasChild">
   <div ng-repeat="field in metadata.field">
     <form-item field="field"/>
   </div>
 </form>
+<div id="transcludeEntityForm" ng-transclude></div>
