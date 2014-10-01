@@ -2,7 +2,7 @@
   
   <div ng-switch-when="S" class="form-item">
     <label for="field-{{ field.id }}">{{ field.description }}</label>
-    <input type="text" class="form-control" id="field-{{ field.id }}" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
+    <input type="text" class="form-control input-sw" id="field-{{ field.id }}" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
   </div>
   
   <!--div ng-switch-when="email" class="form-item">
@@ -17,11 +17,9 @@
 
   <div ng-switch-when="H" class="form-item">
     <label for="field-{{ field.id }}">{{ field.description }}</label>
-    <div class="input-group">
-      <input type="text" class="form-control" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
-      <span class="input-group-btn">
-        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
-      </span>
+    <div class="input-group-sw">
+      <input type="text" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
+      <div class="input-group-addon-sw"><i class="glyphicon glyphicon-calendar" ng-click="open($event)"></i></div>
     </div>
   </div>
 
