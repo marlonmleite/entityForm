@@ -80,13 +80,22 @@ body {
 
 
 /* Sankhya-W 4.0 */
-.form-item .input-group-addon-sw {
 
+.form-item {
+  font-family: Arial;
+  margin-bottom: 20px;
+}
+
+.form-item label {
+  font-size: 13px;
+  color: #333;
+  font-weight: normal;
 }
 
 .input-sw {
+  height:26px;
   margin: 0;
-  padding: 8px 8px 6px 8px;
+  padding: 5px;
   position: relative;
   display: block;
   outline: none;
@@ -107,33 +116,12 @@ body {
 
 .input-group-addon-sw {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 5px;
   cursor: pointer;
 }
 
 .input-group-addon-sw:hover,
 .input-group-addon-sw:active {
-  color: #549535;
+  color: #0066FF;
 }
-
-/*.btn-date {
-  background-color:transparent;
-}
-
-.input-group-sw {
-  margin: 0;
-  outline: none;
-  border: none;
-  border-radius:0;
-  background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
-  background-size: 1px 6px, 1px 1px, 1px 6px;
-  box-shadow:none;
-}
-
-.input-group-sw .form-control {
-  border:none;
-  border-radius:0;
-  box-shadow: none;
-  background-color: transparent;
-}*/

@@ -23,8 +23,8 @@ angular.module('entityFormApp')
 			$scope.field.fieldId = $scope.fieldId;
 			$scope.field.fieldName = $scope.fieldName;
 			$scope.field.fieldType = $scope.fieldType;
-			$scope.field.fieldRequired = $scope.fieldRequired;
-			$scope.field.fieldDisabled = $scope.fieldDisabled;
+			$scope.field.fieldRequired = ($scope.fieldRequired === undefined ? false : true);
+			$scope.field.fieldDisabled = ($scope.fieldDisabled === undefined ? false : true);
 			$scope.field.fieldDescription = $scope.fieldDescription;
 
 			if ($scope.dateFormat === undefined || $scope.dateFormat == "" || $scope.dateFormat == null) {
@@ -45,7 +45,7 @@ angular.module('entityFormApp')
 			fieldType: '@fieldType',
 			fieldRequired: '@fieldRequired',
 			fieldDisabled: '@fieldDisabled',
-			fieldDescription: '@fieldDescription'
+			fieldDescription: '@label'
 		},
 		link: function(scope, element, attrs) {
 			if (scope.field === undefined || scope.field == "" || scope.field == null) {
