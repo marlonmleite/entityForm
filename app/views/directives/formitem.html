@@ -1,24 +1,24 @@
-<div ng-switch on="field.type">
+<div ng-switch on="metadata.type">
   
   <div ng-switch-when="S" class="form-item">
-    <label for="field-{{ field.id }}">{{ field.description }}</label>
-    <input type="text" class="form-control input-sw" id="field-{{ field.id }}" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
+    <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
+    <input type="text" class="form-control input-sw" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="fielFd.isNuable" ng-disabled="metadata.disabled">
   </div>
   
   <div ng-switch-when="email" class="form-item">
-    <label for="field-{{ field.id }}">{{ field.description }}</label>
-    <input type="email" class="form-control" id="field-{{ field.id }}" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
+    <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
+    <input type="email" class="form-control" id="field-{{ metadata.id }}" ng-model="metadata.name" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
   </div>  
   
   <div ng-switch-when="password" class="form-item">
-    <label for="field-{{ field.id }}">{{ field.description }}</label>
-    <input type="password" class="form-control" id="field-{{ field.id }}" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
+    <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
+    <input type="password" class="form-control" id="field-{{ metadata.id }}" ng-model="metadata.name" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
   </div>
 
   <div ng-switch-when="H" class="form-item">
-    <label for="field-{{ field.id }}">{{ field.description }}</label>
+    <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
     <div class="input-group-sw">
-      <input type="text" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
+      <input type="text" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="metadata.name" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
       <div class="input-group-addon-sw"><i class="glyphicon glyphicon-calendar" ng-click="open($event)"></i></div>
     </div>
   </div>

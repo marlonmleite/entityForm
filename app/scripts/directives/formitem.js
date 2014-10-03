@@ -24,11 +24,12 @@ angular.module('entityFormApp')
 		templateUrl: 'views/directives/formitem.html',
 		restrict: 'E',
 		scope: { 
-			field: '=field',
+			metadata: '=',
+			record: '='
 		},
 		link: function(scope, element, attrs) {
-			if(scope.field.dateFormat === undefined){
-				scope.field.dateFormat = defaultDateFormat;
+			if (scope.metadata.dateFormat === undefined) {
+				scope.metadata.dateFormat = defaultDateFormat;
 			}
   		}
 	};
