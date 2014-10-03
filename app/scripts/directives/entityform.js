@@ -21,13 +21,13 @@ angular.module('entityFormApp')
 			metadata: '='
 		},
 		link: function(scope, element, attrs) {
-  			var transcludeElem = element.find('#transcludeEntityForm');
+  			/*var transcludeElem = element.find('#transcludeEntityForm');
 
   			if (transcludeElem.children().length == 0) {
   				scope.hasChild = false;
   			} else {
   				scope.hasChild = true;
-  			}
+  			}*/
   		}
 	};
   });

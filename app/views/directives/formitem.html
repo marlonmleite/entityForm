@@ -5,15 +5,15 @@
     <input type="text" class="form-control input-sw" id="field-{{ field.id }}" ng-model="field.name" ng-required="field.isNuable" ng-disabled="field.disabled">
   </div>
   
-  <!--div ng-switch-when="email" class="form-item">
+  <div ng-switch-when="email" class="form-item">
     <label for="field-{{ field.id }}">{{ field.description }}</label>
     <input type="email" class="form-control" id="field-{{ field.id }}" ng-model="field.model" ng-required="field.isNuable" ng-disabled="field.disabled">
-  </div-->  
+  </div>  
   
-  <!--div ng-switch-when="password" class="form-item">
+  <div ng-switch-when="password" class="form-item">
     <label for="field-{{ field.id }}">{{ field.description }}</label>
     <input type="password" class="form-control" id="field-{{ field.id }}" ng-model="field.model" ng-required="field.isNuable" ng-disabled="field.disabled">
-  </div-->
+  </div>
 
   <div ng-switch-when="H" class="form-item">
     <label for="field-{{ field.id }}">{{ field.description }}</label>
