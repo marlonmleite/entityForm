@@ -13,6 +13,10 @@ angular.module('entityFormApp')
 
 	$scope.alerts = [];
 
+	$scope.fieldProperties = {description: 'Nome do Usuário', name: 'NOMEUSU', id: 'NOMEUSU', type: 'S'};
+
+	$scope.fieldPropertiesDate = {description: 'Dt. Início', name: 'DTINICIO', id: 'DTINICIO', type: 'H'};
+
 	$scope.metadados = 
 		{
 			"name": "Bairro",
