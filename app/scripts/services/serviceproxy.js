@@ -9,7 +9,7 @@
  */
 angular.module('entityFormApp')
   .service('ServiceProxy', function ServiceProxy($http, $q) {
-    var counter = 0;
+  var counter = 0;
 	var applicationName = "";
 
 	this.setApplicationName = function(name) {
@@ -36,10 +36,10 @@ angular.module('entityFormApp')
     	var requestContent = {serviceName: serviceName, requestBody: content};
 
     	if(config === undefined){
-      		config = {headers:{'Content-Type': 'application/json; charset=UTF-8'}};
-      	}
+      	config = {headers:{'Content-Type': 'application/json; charset=UTF-8'}};
+      }
 
-		return $http.post(url, requestContent, config)
+		  return $http.post(url, requestContent, config)
 					.success(function(data, status) {
 						return process(data, status);
 					})

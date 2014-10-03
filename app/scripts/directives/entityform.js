@@ -7,27 +7,36 @@
  * # entityForm
  */
 angular.module('entityFormApp')
-  .directive('entityForm', function () {
-    var controllerFormItem = function($scope) {
-			
+  .directive('entityForm', function (dbDataSetExemple) {
+    var controller = function($scope) {
+    	$scope.loadRecord = function(){
+    		var record = dbDataSetExemple.getRecord();
+    		var field = $scope.metadata.field;
+
+    		for(var i = 0; i < field.length; i++){
+    			var fieldName = field[i].name;
+
+    			if(record.hasOwnProperty(fieldName)){
+    				field[i].name = record[fieldName];
+    			}
+    		}
+    	};
+
+    	$scope.saveRecord = function(){
+    		console.log($scope.metadata.field);
+    	};
 	};
 
 	return {
-		controller: controllerFormItem,
+		controller: controller,
 		templateUrl: 'views/directives/entityform.html',
 		restrict: 'E',
 		transclude: true,
 		scope: { 
-			metadata: '='
+			metadata: '=metadata'
 		},
 		link: function(scope, element, attrs) {
-  			/*var transcludeElem = element.find('#transcludeEntityForm');
-
-  			if (transcludeElem.children().length == 0) {
-  				scope.hasChild = false;
-  			} else {
-  				scope.hasChild = true;
-  			}*/
+  			scope.loadRecord();
   		}
 	};
   });
