@@ -11,11 +11,13 @@ angular.module('entityFormApp')
   	var defaultDateFormat = "dd/MM/yyyy";
   	
     var controllerFormItem = function($scope) {
-		$scope.open = function(event) {
+    	$scope.opened =false;
+    	
+		$scope.openCalendar = function(event) {
 		    event.preventDefault();
 		    event.stopPropagation();
 
-		    $scope.opened = true;
+		    $scope.opened = !$scope.opened;
 		};
 	};
 

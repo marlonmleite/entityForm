@@ -13,18 +13,23 @@ angular.module('entityFormApp')
 
 	$scope.alerts = [];
 
-	$scope.fieldProperties = {description: 'Nome do Usuário', name: 'NOMEUSU', id: 'NOMEUSU', type: 'S'};
+	//usado para testar campos individuais, fora de entityForms 
+	//$scope.fieldProperties = {description: 'Nome do Usuário', name: 'NOMEUSU', id: 'NOMEUSU', type: 'S'};
+	//$scope.fieldPropertiesDate = {description: 'Dt. Início', name: 'DTINICIO', id: 'DTINICIO', type: 'H'};
 
-	$scope.fieldPropertiesDate = {description: 'Dt. Início', name: 'DTINICIO', id: 'DTINICIO', type: 'H'};
+	//@todo implementar metadados de outra entidade, para demostrar
+	//reusabilidade do código por entidades diferentes.
+	var metadadosCidade = {
 
-	$scope.metadados = 
-		{
+	}
+
+	var metadadosBairro = {
 			"name": "Bairro",
 			"description": "Bairro",
 			"field": [{
 				"name": "CODBAI",
 				"id": "CODBAI",
-				"description": "Código do Bairro",
+				"description": "Código",
 				"type": "I",
 				"width": "5",
 				"isAutoNum": "true",
@@ -35,7 +40,7 @@ angular.module('entityFormApp')
 			{
 				"name": "NOMEBAI",
 				"id": "NOMEBAI",
-				"description": "Nome (Bairro)",
+				"description": "Nome",
 				"type": "S",
 				"width": "20",
 				"isAutoNum": "false",
@@ -70,7 +75,7 @@ angular.module('entityFormApp')
 			{
 				"name": "CODREG",
 				"fkTargetEntityName": "Regiao",
-				"fkRelationName": "Regiao",
+				"fkRelationName": "Região",
 				"fkDescriptionField": "Regiao_NOMEREG",
 				"id": "CODREG",
 				"description": "Região",
@@ -82,6 +87,8 @@ angular.module('entityFormApp')
 				"isNuable": "false"
 			}]
 		};
+
+	$scope.metadados = metadadosBairro;
 
 	$scope.showAlert = function(){
 		$scope.alerts.push({type: 'danger', msg: 'Estou mostrando uma mensagem de erro!'});
