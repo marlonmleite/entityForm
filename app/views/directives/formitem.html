@@ -12,18 +12,18 @@
   
   <div ng-switch-when="email" class="form-item">
     <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
-    <input type="email" class="form-control" id="field-{{ metadata.id }}" ng-model="metadata.name" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
+    <input type="email" class="form-control" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
   </div>  
   
   <div ng-switch-when="password" class="form-item">
     <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
-    <input type="password" class="form-control" id="field-{{ metadata.id }}" ng-model="metadata.name" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
+    <input type="password" class="form-control" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
   </div>
 
   <div ng-switch-when="H" class="form-item">
     <label for="field-{{ metadata.id }}">{{ metadata.description }}</label>
     <div class="input-group-sw">
-      <input type="text" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="metadata.name" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
+      <input type="text" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
       <div class="input-group-addon-sw"><i class="glyphicon glyphicon-calendar" ng-click="openCalendar($event)"></i></div>
     </div>
   </div>

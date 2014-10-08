@@ -10,6 +10,7 @@ angular.module('entityFormApp')
   .directive('entityForm', function (dbDataSetExemple) {
     var controller = function($scope) {
     	$scope.saveRecord = function(){
+    		alert("Clicou");
     		console.log($scope.record);
     	};
 	};

@@ -13,7 +13,7 @@ angular.module('entityFormApp')
     	var record = {
 						CODBAI: 100,
 						NOMEBAI: 'Planalto',
-						DTALTER: '2014/10/02 00:00:00',
+						DTALTER: '2014/10/02',
 						DESCRICAOCORREIO: 'Bairro A',
 						CODREG: 10
 					};
