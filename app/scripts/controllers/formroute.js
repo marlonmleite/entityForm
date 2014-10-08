@@ -13,12 +13,9 @@ angular.module('entityFormApp')
 
 	$scope.alerts = [];
 
-	//usado para testar campos individuais, fora de entityForms 
-	//$scope.fieldProperties = {description: 'Nome do Usuário', name: 'NOMEUSU', id: 'NOMEUSU', type: 'S'};
-	//$scope.fieldPropertiesDate = {description: 'Dt. Início', name: 'DTINICIO', id: 'DTINICIO', type: 'H'};
-
 	//@todo implementar metadados de outra entidade, para demostrar
 	//reusabilidade do código por entidades diferentes.
+	//procurar uma entidade sem muitos campos ou ligações (cidade pode não ser uma boa escolha)
 	var metadadosCidade = {
 
 	}
@@ -50,14 +47,13 @@ angular.module('entityFormApp')
 			},
 			{
 				"name": "DTALTER",
-				"isReadOnly": "true",
 				"id": "DTALTER",
 				"description": "Data de alteração",
 				"type": "H",
 				"width": "7",
 				"isAutoNum": "false",
 				"hasDefaultValue": "false",
-				"order": "6",
+				"order": "5",
 				"isNuable": "true"
 			},
 			{
@@ -69,7 +65,7 @@ angular.module('entityFormApp')
 				"width": "60",
 				"isAutoNum": "false",
 				"hasDefaultValue": "false",
-				"order": "5",
+				"order": "4",
 				"isNuable": "true"
 			},
 			{
@@ -85,10 +81,37 @@ angular.module('entityFormApp')
 				"hasDefaultValue": "true",
 				"order": "3",
 				"isNuable": "false"
+			},
+			{//inventei esse campo (não existe na entidade real)
+				"name": "ATIVO",
+				"id": "ATIVO",
+				"isReadOnly": "false",
+				"description": "Ativo",
+				"type": "C",
+				"width": "8",
+				"isAutoNum": "false",
+				"hasDefaultValue": "true",
+				"order": "6",
+				"isNuable": "false",
+				"options": [{"Label":"Sim", "Value":"S"},
+							{"Label":"Não", "Value":"N"}]
 			}]
 		};
 
-	$scope.metadados = metadadosBairro;
+	
+	//essa poderia ser uma funcção de uma clásse js utilitária
+	//e.g. "SanJsUtils.sortMetaFields(metadados)"
+	var setMetadados = function(metadados){
+		metadados.field.sort(function(a, b) {
+		    var x = a.order; var y = b.order;
+		    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+		});
+
+		$scope.metadados = metadados;
+	}
+
+
+	setMetadados(metadadosBairro);
 
 	$scope.showAlert = function(){
 		$scope.alerts.push({type: 'danger', msg: 'Estou mostrando uma mensagem de erro!'});

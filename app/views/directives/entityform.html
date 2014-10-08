@@ -1,11 +1,13 @@
-<div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
-	<h2>{{metadata.description}}</h2>
-	<form id="{{ metadata.name }}">
-	  <div ng-repeat="fieldMetadata in metadata.field">
-	    <form-item metadata="fieldMetadata" record="record"/>
-	  </div>
 
-	  <a class="btn btn-primary" ng-click="saveRecord()">Salvar</a>
-	</form>
-	<div ng-transclude></div>
-</div>
+<h2>{{metadata.description}}</h2>
+<form id="{{ metadata.name }}">
+  <div ng-repeat="fieldMetadata in metadata.field">
+    <form-item metadata="fieldMetadata" record="record"/>
+  </div>
+  <div class="row">
+  	<div class="col-xs-12">
+  		<a class="btn btn-primary" style="float:right" ng-click="saveRecord()"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+  	</div>
+  </div>
+</form>
+<div ng-transclude></div>

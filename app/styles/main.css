@@ -125,3 +125,7 @@ body {
 .input-group-addon-sw:active {
   color: #0066FF;
 }
+
+select {
+  width:100%;
+}
