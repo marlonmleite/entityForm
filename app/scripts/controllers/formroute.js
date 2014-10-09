@@ -83,24 +83,36 @@ angular.module('entityFormApp')
 				"isNuable": "false"
 			},
 			{//inventei esse campo (não existe na entidade real)
+				"name": "TIPO",
+				"id": "TIPO",
+				"isReadOnly": "false",
+				"description": "Tipo",
+				"type": "C",
+				"width": "8",
+				"isAutoNum": "false",
+				"hasDefaultValue": "true",
+				"order": "7",
+				"isNuable": "false",
+				"options": [{"Label":"Agência", "Value":"AG"},
+							{"Label":"Sub-agência", "Value":"SA"}]
+			},
+			{//inventei esse campo (não existe na entidade real)
 				"name": "ATIVO",
 				"id": "ATIVO",
 				"isReadOnly": "false",
 				"description": "Ativo",
-				"type": "C",
+				"type": "B",
 				"width": "8",
 				"isAutoNum": "false",
 				"hasDefaultValue": "true",
 				"order": "6",
 				"isNuable": "false",
-				"options": [{"Label":"Sim", "Value":"S"},
-							{"Label":"Não", "Value":"N"}]
 			}]
 		};
 
 	
 	//essa poderia ser uma funcção de uma clásse js utilitária
-	//e.g. "SanJsUtils.sortMetaFields(metadados)"
+	//e.g. "SanUtils.sortMetaFields(metadados)"
 	var setMetadados = function(metadados){
 		metadados.field.sort(function(a, b) {
 		    var x = a.order; var y = b.order;
@@ -110,16 +122,7 @@ angular.module('entityFormApp')
 		$scope.metadados = metadados;
 	}
 
-
 	setMetadados(metadadosBairro);
-
-	$scope.showAlert = function(){
-		$scope.alerts.push({type: 'danger', msg: 'Estou mostrando uma mensagem de erro!'});
-	};
-
-	$scope.closeAlert = function(index) {
-    	$scope.alerts.splice(index, 1);
-  	};
 	
 	$scope.buscarParametro = function(chaveParametro){
 		//var parametro = {param: {name: chaveParametro}};

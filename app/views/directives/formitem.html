@@ -3,56 +3,61 @@
     <div class="form-item">
       <label for="field-{{ metadata.id }}">{{ metadata.description }}<span ng-show="metadata.isNuable === 'false'"> *</span></label>
 
-      <span ng-switch-when="S">
-        <!-- Text
-        -->
+      <!-- Text -->
+      <div ng-switch-when="S">
         <input ng-readonly="{{ metadata.isReadOnly }}" type="text" class="form-control input-sw" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="field.isNuable" ng-disabled="metadata.disabled">
-      </span>
+      </div>
 
-      <span ng-switch-when="I">
-        <!-- Number
-        -->
+      <!-- Number -->
+      <div ng-switch-when="I">
         <input type="number" ng-readonly="{{ metadata.isReadOnly }}" class="form-control input-sw" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="field.isNuable" ng-disabled="metadata.disabled">
-      </span>
+      </div>
 
-      <span ng-switch-when="email">
-        <!-- Email
-        -->
+      <!-- Email -->
+      <div ng-switch-when="email">
         <input type="email" ng-readonly="{{ metadata.isReadOnly }}" class="form-control" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
-      </span>
+      </div>
 
-      <span ng-switch-when="password">
-        <!-- Password
-        -->
+      <!-- Password -->
+      <div ng-switch-when="password">
         <input type="password" ng-readonly="{{ metadata.isReadOnly }}" class="form-control" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
-      </span>
+      </div>
 
-      <span ng-switch-when="H">
-        <!-- Date
-        -->
-        <div class="input-group-sw">
-          <input type="text" ng-readonly="{{ metadata.isReadOnly }}" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
-          <div class="input-group-addon-sw"><i class="glyphicon glyphicon-calendar" ng-click="openCalendar($event)"></i></div>
-        </div>
-      </span>
+      <!-- Date -->
+      <div class="input-group-sw" ng-switch-when="H">
+        <input type="text" ng-readonly="{{ metadata.isReadOnly }}" class="form-control input-sw" datepicker-popup="dd/MM/yyyy" is-open="$parent.opened" show-button-bar="false" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-disabled="metadata.disabled">
+        <div class="input-group-addon-sw"><i class="glyphicon glyphicon-calendar" ng-click="openCalendar($event)"></i></div>
+      </div>
 
-      <span ng-switch-when="C">
-        <!-- ComboBox 
-              Obs.: Será renderizado como um campo de texto caso esteja em modo read-only.
-              Obs.: Irá apresentar uma opção em branco caso não seja "required".
-        -->
-        <span ng-switch on="metadata.isReadOnly">
+      <!-- ComboBox 
+        Obs.: Será renderizado como um campo de texto caso esteja em modo read-only.
+        Obs.: Irá apresentar uma opção em branco caso não seja "required".
+      -->
+      <div ng-switch-when="C">
+        <div ng-switch on="metadata.isReadOnly">
           <span ng-switch-when="true">
             <input ng-readonly="{{ metadata.isReadOnly }}" type="text" class="form-control input-sw" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="field.isNuable" ng-disabled="metadata.disabled">
           </span>
           <span ng-switch-default>
-            <br>
-            <select ng-disabled="{{ metadata.isReadOnly }}" id="field-{{ metadata.id }}" ng-required="metadata.isNuable" ng-model="record[metadata.name]" ng-options="option.Value as option.Label for option in metadata.options">
+            <select ng-disabled="{{ metadata.isReadOnly }}" id="field-{{ metadata.id }}" class="form-control select-sw" ng-required="metadata.isNuable" ng-model="record[metadata.name]" ng-options="option.Value as option.Label for option in metadata.options">
               <option ng-show="metadata.isNuable" value=""></option>
             </select>
           </span>
-        </span>
-      </span>
+        </div>
+      </div>
+
+      <!-- Boolean -->
+      <div ng-switch-when="B">
+        <div class="checkbox-sw">
+          <div class="toggle-bg toggle-alternate {{record[metadata.name]}}">
+            <label class="{{record[metadata.name]}}">{{record[metadata.name]}}</label>
+            <input type="radio" name="toggle" value="N" ng-model="record[metadata.name]">
+            <input type="radio" name="toggle" value="S" ng-model="record[metadata.name]">
+            <span class="switch {{record[metadata.name]}}"></span>
+          </div>
+          <br class="clear"/>
+        </div>
+      </div>
     </div>
   </div>
 </div>
