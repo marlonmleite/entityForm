@@ -148,10 +148,6 @@ body {
   clear:both;
 }
 
-input.ng-invalid {
-   background: red;
- }
-
 select {
   width:100%;
 }
@@ -264,4 +260,20 @@ select {
 .toggle-bg label.N {
   right: .55em;
   color: #aaa;
+}
+
+input:focus:required:invalid:focus, 
+textarea:focus:required:invalid:focus, 
+select:focus:required:invalid:focus,
+select.ng-invalid,
+input.ng-invalid.ng-dirty {
+  background: bottom left linear-gradient(#e9322d, #e9322d) no-repeat, bottom center linear-gradient(#e9322d, #e9322d) repeat-x, bottom right linear-gradient(#e9322d, #e9322d) no-repeat;
+  background-size: 1px 6px, 1px 1px, 1px 6px;
+  box-shadow:none;
+}
+
+input:focus.ng-valid.ng-dirty {
+  background: bottom left linear-gradient(#2b934a, #2b934a) no-repeat, bottom center linear-gradient(#2b934a, #2b934a) repeat-x, bottom right linear-gradient(#2b934a, #2b934a) no-repeat;
+  background-size: 1px 6px, 1px 1px, 1px 6px;
+  box-shadow:none;
 }

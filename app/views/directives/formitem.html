@@ -5,7 +5,7 @@
 
       <!-- Text -->
       <div ng-switch-when="S">
-        <input ng-readonly="{{ metadata.isReadOnly }}" type="text" class="form-control input-sw" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="field.isNuable" ng-disabled="metadata.disabled">
+        <input ng-readonly="{{ metadata.isReadOnly }}" type="text" class="form-control input-sw" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="true" ng-disabled="metadata.disabled">
       </div>
 
       <!-- Number -->

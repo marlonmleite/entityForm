@@ -12,6 +12,7 @@ angular.module('entityFormApp')
     	$scope.saveRecord = function(){
     		alert("//TOODO: Send save record request...");
     		console.log($scope.record);
+    		console.log($scope.entityForm);
     	};
 	};
 
