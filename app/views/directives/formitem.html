@@ -49,12 +49,14 @@
       <!-- Boolean -->
       <div ng-switch-when="B">
         <div class="checkbox-sw">
-          <div class="toggle-bg toggle-alternate {{record[metadata.name]}}">
-            <label class="{{record[metadata.name]}}">{{record[metadata.name]}}</label>
-            <input type="radio" name="toggle" value="N" ng-model="record[metadata.name]">
-            <input type="radio" name="toggle" value="S" ng-model="record[metadata.name]">
-            <span class="switch {{record[metadata.name]}}"></span>
+          <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-btn-sw" ng-model="record[metadata.name]" checked>
+            <label class="onoffswitch-label" for="switch-btn-sw">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
           </div>
+          {{ record[metadata.name] }}
           <br class="clear"/>
         </div>
       </div>

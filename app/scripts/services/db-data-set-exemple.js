@@ -15,7 +15,8 @@ angular.module('entityFormApp')
 						NOMEBAI: 'Planalto',
 						DTALTER: '2014/10/02',
 						DESCRICAOCORREIO: 'Bairro A',
-						CODREG: 10
+						CODREG: 10,
+						ATIVO: true
 					};
     	return record;
     };

@@ -152,116 +152,6 @@ select {
   width:100%;
 }
 
-/* CSS Switch Button */
-.toggle-bg {
-  background: #fff;
-  border-radius: 2em;
-  border: 0.12em solid #e6e6e6;
-  display: block;
-  float: left;
-  height: 2em;
-  position: relative;
-  width: 3.2em;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  position: relative;
-}
-
-.toggle-bg:hover {
-  border-color: #d9d9d9;
-}
-
-.toggle-bg.S {
-  background: #5ca33a;
-  border-color: #4f8e31;
-}
-
-.toggle-bg input {
-  margin: 0;
-  padding: 0;
-  width: 4.8em;
-  height: 100%;
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  cursor: pointer;
-  z-index: 2;
-  zoom: 1;
-  filter: alpha(opacity=0);
-}
-
-.toggle-bg input:checked ~ .switch {
-  left: 0;
-}
-
-.toggle-bg input ~ :checked ~ .switch {
-  left: 1.18em;
-}
-
-.toggle-bg input:checked {
-  z-index: 0;
-}
-
-.switch {
-  background: white;
-  border-radius: 2em;
-  border: 0.1em solid #d9d9d9;
-  display: block;
-  float: left;
-  height: 1.9em;
-  width: 1.9em;
-  left: -.1em;
-  position: relative;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  z-index: 1;
-}
-
-.switch.S {
-  box-shadow: -0.2em 0.2em 0.5em rgba(0, 0, 0, 0.06), 0.4em 0.4em 1.5em rgba(0, 0, 0, 0.08);
-}
-
-.switch.N {
-  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.06), -0.4em 0.4em 1.5em rgba(0, 0, 0, 0.08);
-}
-
-.toggle-alternate {
-  clear: both;
-  width: 4.48em;
-}
-
-.toggle-alternate input {
-  width: 6.24em;
-}
-
-.toggle-alternate input ~ :checked ~ .switch {
-  left: 2.46em;
-}
-
-.toggle-alternate label {
-  font-weight: 300;
-  font-size: .9em;
-  text-transform: uppercase;
-  position: absolute;
-  top: 0.5em;
-}
-
-.toggle-bg label.S {
-  left: .75em;
-  color: white;
-  text-shadow: 0 0.1em 0 #00dc61;
-}
-
-.toggle-bg label.N {
-  right: .55em;
-  color: #aaa;
-}
-
 input:focus:required:invalid:focus, 
 textarea:focus:required:invalid:focus, 
 select:focus:required:invalid:focus,
@@ -276,4 +166,90 @@ input:focus.ng-valid.ng-dirty {
   background: bottom left linear-gradient(#2b934a, #2b934a) no-repeat, bottom center linear-gradient(#2b934a, #2b934a) repeat-x, bottom right linear-gradient(#2b934a, #2b934a) no-repeat;
   background-size: 1px 6px, 1px 1px, 1px 6px;
   box-shadow:none;
+}
+
+/* CSS Switch Button */
+.onoffswitch {
+    position: relative; width: 77px;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #ccc; 
+    border-radius: 18px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; 
+    margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; 
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; 
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, 
+.onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 26px; 
+    padding: 0; 
+    line-height: 26px;
+    font-size: 14px; color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Sim";
+    padding-left: 10px;
+    background-color: #5CA33A; 
+    color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "Não";
+    padding-right: 10px;
+    background-color: #EEEEEE; 
+    color: #302F2F;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; 
+    width: 23px; 
+    margin: 3.5px;
+    background: #FFFFFF;
+    border: 2px solid #ccc; 
+    border-radius: 18px;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    right: 45px;
+    -moz-transition: all 0.3s ease-in 0s; 
+    -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; 
+    transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
 }
