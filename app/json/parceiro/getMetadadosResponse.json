@@ -1,0 +1,4055 @@
+{
+	"serviceName": "CRUDServiceProvider.getMetadados",
+	"status": "1",
+	"responseBody": {
+		"metadata": {
+			"id": {
+				"member": {
+					"name": "CODPARC"
+				}
+			},
+			"entity": [{
+				"name": "Parceiro",
+				"description": "Parceiro",
+				"field": [{
+					"name": "IPIINCICMS",
+					"id": "IPIINCICMS",
+					"description": "IPI incide no cálculo do ICMS",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "94",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "CODBCO",
+					"fkTargetEntityName": "Banco",
+					"fkRelationName": "Banco",
+					"fkDescriptionField": "Banco_NOMEBCO",
+					"id": "CODBCO",
+					"description": "Banco",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "22",
+					"isNuable": "false"
+				},
+				{
+					"name": "TEMIPI",
+					"id": "TEMIPI",
+					"description": "Tem IPI",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "95",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "ALIQISSRETSIMPLES",
+					"id": "ALIQISSRETSIMPLES",
+					"description": "Alíquota ISS Ret/Simples",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "129",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_ENVIABI",
+					"isAdicional": "true",
+					"id": "AD_ENVIABI",
+					"description": "Habilita Parceiro receber BI?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "156",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "AD_SATISFVENDA",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_SATISFVENDA",
+					"description": "SATISFACAO: ATEND. VENDAS",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "147",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "INSATISFEITO",
+						"value": "INSATISFEITO"
+					},
+					{
+						"key": "SATISFEITO",
+						"value": "SATISFEITO"
+					},
+					{
+						"key": "MUITO SATISFEITO",
+						"value": "MUITO SATISFEITO"
+					},
+					{
+						"key": "NUNCA COMPROU",
+						"value": "NUNCA COMPROU"
+					}]
+				},
+				{
+					"name": "PRAZOCONTATO",
+					"id": "PRAZOCONTATO",
+					"description": "Prazo p/ contato",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "65",
+					"isNuable": "true"
+				},
+				{
+					"name": "OBSERVACOES",
+					"id": "OBSERVACOES",
+					"description": "Observações",
+					"type": "S",
+					"width": "4000",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "105",
+					"isNuable": "true"
+				},
+				{
+					"name": "LATITUDE",
+					"isReadOnly": "true",
+					"nuCasasDecimais": "7",
+					"id": "LATITUDE",
+					"description": "Latitude",
+					"type": "S",
+					"width": "255",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "133",
+					"isNuable": "true"
+				},
+				{
+					"name": "DESCSTIVA",
+					"id": "DESCSTIVA",
+					"description": "Considera desconto no cálculo de ST por IVA",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "100",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "AD_QUALIPROD",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_QUALIPROD",
+					"description": "DECISÃO - QUAL. PROD. (1 A 4)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "137",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "TOLERINADIMP",
+					"id": "TOLERINADIMP",
+					"description": "Tolerância p/ inadimplência",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "67",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_MARCA",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_MARCA",
+					"description": "MARCA",
+					"type": "S",
+					"width": "10",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "160",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "CHAMEX",
+						"value": "CHAMEX"
+					},
+					{
+						"key": "COPIMAX",
+						"value": "COPIMAX"
+					},
+					{
+						"key": "REPORT",
+						"value": "REPORT"
+					},
+					{
+						"key": "RIPAX",
+						"value": "RIPAX"
+					},
+					{
+						"key": "OUTRAS",
+						"value": "OUTRAS"
+					},
+					{
+						"key": "TANTO FAZ",
+						"value": "TANTO FAZ"
+					}]
+				},
+				{
+					"name": "PRODUTORTEMNF",
+					"id": "PRODUTORTEMNF",
+					"description": "Produtor tem NF",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "101",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "DTCAD",
+					"isReadOnly": "true",
+					"id": "DTCAD",
+					"description": "Data cadastramento",
+					"type": "D",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "57",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_QUANTFUNC",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_QUANTFUNC",
+					"description": "QTD. USUARIOS DIA",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "132",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "ALUNO",
+					"id": "ALUNO",
+					"description": "Aluno",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "108",
+					"isNuable": "false",
+					"visivel": "N",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "CODCTABCO",
+					"id": "CODCTABCO",
+					"description": "Conta bancária parceiro",
+					"type": "S",
+					"width": "14",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "26",
+					"isNuable": "true"
+				},
+				{
+					"name": "LIMCREDMENSAL",
+					"id": "LIMCREDMENSAL",
+					"description": "Limite crédito mensal",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "72",
+					"isNuable": "true"
+				},
+				{
+					"name": "FAX",
+					"id": "FAX",
+					"description": "Celular/Fax",
+					"type": "S",
+					"width": "13",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "53",
+					"isNuable": "true"
+				},
+				{
+					"name": "MEDICO",
+					"id": "MEDICO",
+					"description": "Médico",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "14",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "PERCJURO",
+					"id": "PERCJURO",
+					"description": "% de juro (diário)",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "126",
+					"isNuable": "true"
+				},
+				{
+					"name": "VENDEDOR",
+					"id": "VENDEDOR",
+					"description": "Vendedor",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "8",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "CODUNIMED",
+					"id": "CODUNIMED",
+					"description": "Cód. Unimed",
+					"type": "S",
+					"width": "17",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "38",
+					"isNuable": "true"
+				},
+				{
+					"name": "DTALTER",
+					"isReadOnly": "true",
+					"id": "DTALTER",
+					"description": "Data alteração",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "60",
+					"isNuable": "true"
+				},
+				{
+					"name": "CALCINSS",
+					"id": "CALCINSS",
+					"description": "Calcula FUNRURAL/INSS",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "96",
+					"isNuable": "true",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "TRANSPORTADORA",
+					"id": "TRANSPORTADORA",
+					"description": "Transportadora",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "10",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "IDESTRANGEIRO",
+					"id": "IDESTRANGEIRO",
+					"description": "Identificação de Estrangeiro",
+					"type": "S",
+					"width": "14",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "110",
+					"isNuable": "true"
+				},
+				{
+					"name": "CLASSIFICMS",
+					"id": "CLASSIFICMS",
+					"description": "Classificação ICMS",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "82",
+					"isNuable": "true",
+					"option": [{
+						"key": "R",
+						"value": "Revendedor"
+					},
+					{
+						"key": "T",
+						"value": "Usar a da TOP"
+					},
+					{
+						"key": "X",
+						"value": "Consumidor Contribuinte"
+					},
+					{
+						"key": "C",
+						"value": "Consumidor Final"
+					},
+					{
+						"key": "I",
+						"value": "Isento de ICMS"
+					},
+					{
+						"key": "P",
+						"value": "Produtor Rural"
+					}]
+				},
+				{
+					"name": "CODTAB",
+					"fkTargetEntityName": "NomeTabelasPreco",
+					"fkRelationName": "NomeTabelasPreco",
+					"fkDescriptionField": "NomeTabelasPreco_NOMETAB",
+					"id": "CODTAB",
+					"description": "Tabela de Preço",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "68",
+					"isNuable": "true"
+				},
+				{
+					"name": "GRUPOAUTOR",
+					"id": "GRUPOAUTOR",
+					"description": "Grupo de autorização",
+					"type": "S",
+					"width": "30",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "70",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_SATISFQLDPRO",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_SATISFQLDPRO",
+					"description": "SATISFACAO: PRODUTOS",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "152",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "Prod. COM qualidade",
+						"value": "Prod. COM qualidade"
+					},
+					{
+						"key": "Prod. SEM qualidade",
+						"value": "Prod. SEM qualidade"
+					},
+					{
+						"key": "Nunca Comprou",
+						"value": "Nunca Comprou"
+					}]
+				},
+				{
+					"name": "PERCCUSVAR",
+					"id": "PERCCUSVAR",
+					"description": "% de Custo Variável",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "78",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_INATIVO",
+					"isReadOnly": "false",
+					"isAdicional": "true",
+					"id": "AD_INATIVO",
+					"description": "SEM NEG 30D",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "131",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "TELEFONE",
+					"id": "TELEFONE",
+					"description": "Telefone",
+					"type": "S",
+					"width": "13",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "51",
+					"isNuable": "true"
+				},
+				{
+					"name": "EVENDA",
+					"id": "EVENDA",
+					"description": "Email p/ pedido de venda",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "55",
+					"isNuable": "false",
+					"option": [{
+						"key": "C",
+						"value": "Contato"
+					},
+					{
+						"key": "P",
+						"value": "Parceiro"
+					},
+					{
+						"key": "N",
+						"value": "Não envia"
+					}]
+				},
+				{
+					"name": "CTAADIANT",
+					"id": "CTAADIANT",
+					"description": "Conta Adiantamento",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "12",
+					"isNuable": "true",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "FLEX",
+					"id": "FLEX",
+					"description": "Usar Créd.Flex?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "117",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "RAZAOSOCIAL",
+					"id": "RAZAOSOCIAL",
+					"description": "Razão social",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "3",
+					"isNuable": "true"
+				},
+				{
+					"name": "RAMAL",
+					"id": "RAMAL",
+					"description": "Ramal (Parceiro)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "52",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODBAI",
+					"fkTargetEntityName": "Bairro",
+					"fkRelationName": "Bairro",
+					"fkDescriptionField": "Bairro_NOMEBAI",
+					"id": "CODBAI",
+					"description": "Bairro",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "44",
+					"isNuable": "false"
+				},
+				{
+					"name": "CSTIPISAI",
+					"id": "CSTIPISAI",
+					"description": "Código Sit.Trib.IPI Saída",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "84",
+					"isNuable": "true",
+					"option": [{
+						"key": "50",
+						"value": "50-Saída c/Recuperação de Crédito"
+					},
+					{
+						"key": "51",
+						"value": "51-Saída c/Alíquota zero"
+					},
+					{
+						"key": "52",
+						"value": "52-Saída Isenta"
+					},
+					{
+						"key": "53",
+						"value": "53-Saída Não Tributada"
+					},
+					{
+						"key": "54",
+						"value": "54-Saída Imune"
+					},
+					{
+						"key": "55",
+						"value": "55-Saída c/Suspensão"
+					},
+					{
+						"key": "99",
+						"value": "99-Outras Saídas"
+					},
+					{
+						"key": "-1",
+						"value": "(-1)-Não sujeita ao IPI"
+					}]
+				},
+				{
+					"name": "SITSINTEGRA",
+					"isReadOnly": "true",
+					"groupName": "EDZ",
+					"id": "SITSINTEGRA",
+					"description": "Situação no Sintegra",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "143",
+					"isNuable": "false",
+					"option": [{
+						"key": "I",
+						"value": "Indefinida"
+					},
+					{
+						"key": "B",
+						"value": "Restrição"
+					},
+					{
+						"key": "A",
+						"value": "Regular"
+					}]
+				},
+				{
+					"name": "BLOQUEAR",
+					"id": "BLOQUEAR",
+					"description": "Bloquear venda a prazo",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "73",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "AD_PERCFRETE",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_PERCFRETE",
+					"description": "PERCENTUAL DE FRETE",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "128",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "MEIRJ",
+					"id": "MEIRJ",
+					"description": "Micro empresário individual(RJ)",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "138",
+					"isNuable": "true",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "STATUSEDZ",
+					"isReadOnly": "true",
+					"groupName": "EDZ",
+					"id": "STATUSEDZ",
+					"description": "Status envio EDZ",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "145",
+					"isNuable": "false",
+					"option": [{
+						"key": "P",
+						"value": "Pendente"
+					},
+					{
+						"key": "E",
+						"value": "Enviado"
+					},
+					{
+						"key": "R",
+						"value": "Recebido"
+					}]
+				},
+				{
+					"name": "TIPOGERBOLETO",
+					"id": "TIPOGERBOLETO",
+					"description": "Tipo geração boleto",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "127",
+					"isNuable": "false",
+					"option": [{
+						"key": "I",
+						"value": "Imprimir"
+					},
+					{
+						"key": "E",
+						"value": "Enviar e-mail"
+					},
+					{
+						"key": "P",
+						"value": "Preparar"
+					}]
+				},
+				{
+					"name": "INSCESTADNAUF",
+					"id": "INSCESTADNAUF",
+					"description": "Insc. Estadual na UF",
+					"type": "S",
+					"width": "16",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "34",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODREG",
+					"fkTargetEntityName": "Regiao",
+					"fkRelationName": "Regiao",
+					"fkDescriptionField": "Regiao_NOMEREG",
+					"id": "CODREG",
+					"description": "Região",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "48",
+					"isNuable": "false"
+				},
+				{
+					"name": "QTDMAXTITVENCIDOS",
+					"id": "QTDMAXTITVENCIDOS",
+					"description": "Qtd. máx. de títulos vencidos",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "81",
+					"isNuable": "true"
+				},
+				{
+					"name": "PRAZOPAG",
+					"id": "PRAZOPAG",
+					"description": "Prazo médio pagamento",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "66",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODPARC",
+					"id": "CODPARC",
+					"description": "Cód. Parceiro (Parceiro)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "true",
+					"hasDefaultValue": "false",
+					"order": "1",
+					"isNuable": "false"
+				},
+				{
+					"name": "CAIXAPOSTAL",
+					"id": "CAIXAPOSTAL",
+					"description": "Caixa Postal",
+					"type": "S",
+					"width": "10",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "50",
+					"isNuable": "true"
+				},
+				{
+					"name": "ATIVO",
+					"id": "ATIVO",
+					"description": "Ativo",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "4",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "TIPANEXONFE",
+					"id": "TIPANEXONFE",
+					"description": "Tipo do anexo",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "151",
+					"isNuable": "false",
+					"option": [{
+						"key": "Z",
+						"value": "Arquivo compactado (Extensão ZIP)"
+					},
+					{
+						"key": "X",
+						"value": "Arquivo normal (Extensão XML)"
+					}]
+				},
+				{
+					"name": "AD_QTDE",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_QTDE",
+					"description": "QUANTIDADE PACOTE",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "161",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "RETEMISS",
+					"id": "RETEMISS",
+					"description": "Retém ISS",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "98",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "EMAIL",
+					"id": "EMAIL",
+					"description": "Email",
+					"type": "S",
+					"width": "80",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "54",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCID",
+					"fkTargetEntityName": "Cidade",
+					"fkRelationName": "Cidade",
+					"fkDescriptionField": "Cidade_NOMECID",
+					"id": "CODCID",
+					"description": "Cód. Cidade",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "46",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODEMPPREF",
+					"fkTargetEntityName": "Empresa",
+					"fkRelationName": "EmpresaPreferencial",
+					"fkDescriptionField": "EmpresaPreferencial_NOMEFANTASIA",
+					"fkTargetFieldName": "CODEMP",
+					"id": "CODEMPPREF",
+					"description": "Empresa Preferencial",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "119",
+					"isNuable": "true"
+				},
+				{
+					"name": "DESCBONIF",
+					"id": "DESCBONIF",
+					"description": "Desconto bonificado",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "75",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Em separado"
+					},
+					{
+						"key": "P",
+						"value": "Proibido"
+					},
+					{
+						"key": "L",
+						"value": "Livre"
+					},
+					{
+						"key": "J",
+						"value": "Na Nota/Pedido"
+					}]
+				},
+				{
+					"name": "AD_UMFORNEC",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_UMFORNEC",
+					"description": "QTD.FORNECEDORES",
+					"type": "S",
+					"width": "3",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "135",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "1",
+						"value": "1"
+					},
+					{
+						"key": "2",
+						"value": "2"
+					},
+					{
+						"key": "3 +",
+						"value": "3 +"
+					}]
+				},
+				{
+					"name": "CODAGE",
+					"id": "CODAGE",
+					"description": "Agência bancária",
+					"type": "S",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "24",
+					"isNuable": "true"
+				},
+				{
+					"name": "DIASVARPAGTO",
+					"id": "DIASVARPAGTO",
+					"description": "Antecipação/Atraso recebimento(em dias)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "79",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCTACTB",
+					"fkTargetEntityName": "PlanoConta",
+					"fkRelationName": "PlanoConta",
+					"fkDescriptionField": "PlanoConta_DESCRCTA",
+					"id": "CODCTACTB",
+					"description": "Conta contábil 1",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "86",
+					"isNuable": "true"
+				},
+				{
+					"name": "RETSTVENDA",
+					"id": "RETSTVENDA",
+					"description": "Retirar ST do preço de venda do item",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "118",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "CEP",
+					"id": "CEP",
+					"description": "CEP",
+					"type": "S",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "39",
+					"isNuable": "true"
+				},
+				{
+					"name": "MOTORISTA",
+					"id": "MOTORISTA",
+					"description": "Motorista",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "13",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "QTDMAXPEDCPA",
+					"id": "QTDMAXPEDCPA",
+					"description": "Qtd máx itens por pedido",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "112",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "CODPARCMATRIZ",
+					"fkTargetEntityName": "Parceiro",
+					"fkRelationName": "ParceiroMatriz",
+					"fkDescriptionField": "ParceiroMatriz_NOMEPARC",
+					"fkTargetFieldName": "CODPARC",
+					"id": "CODPARCMATRIZ",
+					"description": "Matriz",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "16",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_SATISFSERV",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_SATISFSERV",
+					"description": "SATISFACAO: MIX DE PRODUTOS",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "153",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "ENCONTRO O QUE PROC.",
+						"value": "ENCONTRO O QUE PROC."
+					},
+					{
+						"key": "O MIX DEVE SER AMPL.",
+						"value": "O MIX DEVE SER AMPL."
+					},
+					{
+						"key": "NÃO CONHEÇO O MIX",
+						"value": "NÃO CONHEÇO O MIX"
+					}]
+				},
+				{
+					"name": "LONGITUDE",
+					"isReadOnly": "true",
+					"nuCasasDecimais": "7",
+					"id": "LONGITUDE",
+					"description": "Longitude",
+					"type": "S",
+					"width": "255",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "134",
+					"isNuable": "true"
+				},
+				{
+					"name": "CEI",
+					"id": "CEI",
+					"description": "Cad. Específico do INSS - CEI",
+					"type": "S",
+					"width": "12",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "35",
+					"isNuable": "true"
+				},
+				{
+					"name": "EMAILDANFE",
+					"id": "EMAILDANFE",
+					"description": "Enviar DANFE por e-mail?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "114",
+					"isNuable": "true",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "LIMCRED",
+					"id": "LIMCRED",
+					"description": "Limite de crédito",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "71",
+					"isNuable": "true"
+				},
+				{
+					"name": "DTNASC",
+					"id": "DTNASC",
+					"description": "Data nascimento/Fundação",
+					"type": "D",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "61",
+					"isNuable": "true"
+				},
+				{
+					"name": "INDNATRET",
+					"id": "INDNATRET",
+					"description": "Natureza da Retenção na Fonte",
+					"type": "S",
+					"width": "2",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "85",
+					"isNuable": "true",
+					"option": [{
+						"key": "01",
+						"value": "01 - Retenção por Órgãos, Autarquias e Fundações Federais"
+					},
+					{
+						"key": "02",
+						"value": "02 - Retenção por outras Entidades Adm.Pública Federal"
+					},
+					{
+						"key": "03",
+						"value": "03 - Retenção por Pessoas Jurídicas de Direito Privado"
+					},
+					{
+						"key": "04",
+						"value": "04 - Recolhimento por Sociedade Cooperativa"
+					},
+					{
+						"key": "05",
+						"value": "05 - Retenção por Fabricante de Máquinas e Veículos"
+					},
+					{
+						"key": "99",
+						"value": "99 - Outras Retenções"
+					}]
+				},
+				{
+					"name": "SITCCF",
+					"isReadOnly": "true",
+					"groupName": "EDZ",
+					"id": "SITCCF",
+					"description": "Situação no CCF",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "139",
+					"isNuable": "false",
+					"option": [{
+						"key": "I",
+						"value": "Indefinida"
+					},
+					{
+						"key": "A",
+						"value": "Regular"
+					},
+					{
+						"key": "B",
+						"value": "Restrição"
+					}]
+				},
+				{
+					"name": "CODCTACTB4",
+					"fkTargetEntityName": "PlanoConta",
+					"fkRelationName": "PlanoConta4",
+					"fkDescriptionField": "PlanoConta4_DESCRCTA",
+					"fkTargetFieldName": "CODCTACTB",
+					"id": "CODCTACTB4",
+					"description": "Conta contábil 4",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "92",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCTACTB3",
+					"fkTargetEntityName": "PlanoConta",
+					"fkRelationName": "PlanoConta3",
+					"fkDescriptionField": "PlanoConta3_DESCRCTA",
+					"fkTargetFieldName": "CODCTACTB",
+					"id": "CODCTACTB3",
+					"description": "Conta contábil 3",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "90",
+					"isNuable": "true"
+				},
+				{
+					"name": "POTENCIALNEG",
+					"nuCasasDecimais": "7",
+					"id": "POTENCIALNEG",
+					"description": "Potencial de compra",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "130",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCTACTB2",
+					"fkTargetEntityName": "PlanoConta",
+					"fkRelationName": "PlanoConta2",
+					"fkDescriptionField": "PlanoConta2_DESCRCTA",
+					"fkTargetFieldName": "CODCTACTB",
+					"id": "CODCTACTB2",
+					"description": "Conta contábil 2",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "88",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_CANALATEND",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_CANALATEND",
+					"description": "PREFERE COMPRAR",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "146",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "VENDEDOR EXT.",
+						"value": "VENDEDOR EXT."
+					},
+					{
+						"key": "INTERNET",
+						"value": "INTERNET"
+					},
+					{
+						"key": "TELEFONE",
+						"value": "TELEFONE"
+					},
+					{
+						"key": "VAI BUSCAR",
+						"value": "VAI BUSCAR"
+					}]
+				},
+				{
+					"name": "CODLOCALPADRAO",
+					"fkTargetEntityName": "LocalFinanceiro",
+					"fkRelationName": "LocalFinanceiro",
+					"fkDescriptionField": "LocalFinanceiro_DESCRLOCAL",
+					"fkTargetFieldName": "CODLOCAL",
+					"id": "CODLOCALPADRAO",
+					"description": "Local padrão para produtos",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "122",
+					"isNuable": "false"
+				},
+				{
+					"name": "PROFESSOR",
+					"id": "PROFESSOR",
+					"description": "Professor",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "109",
+					"isNuable": "false",
+					"visivel": "N",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "IMPLAUDOLOTE",
+					"id": "IMPLAUDOLOTE",
+					"description": "Imprime laudo lote",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "62",
+					"isNuable": "true",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "INSCMUN",
+					"id": "INSCMUN",
+					"description": "Cad.Mun.Contribuintes",
+					"type": "S",
+					"width": "16",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "37",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCRED",
+					"fkTargetEntityName": "GrupoAnaliseCredito",
+					"fkRelationName": "GrupoAnaliseCredito",
+					"id": "CODCRED",
+					"description": "Crédito",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "111",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "AD_PRIORIDAD",
+					"isReadOnly": "false",
+					"groupName": "Logística",
+					"isAdicional": "true",
+					"id": "AD_PRIORIDAD",
+					"description": "Nível de Prioridade",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "157",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "1-Normal",
+						"value": "1-Normal"
+					},
+					{
+						"key": "2-Preferencial (PSI)",
+						"value": "2-Preferencial (PSI)"
+					}]
+				},
+				{
+					"name": "NOMEPARC",
+					"id": "NOMEPARC",
+					"description": "Nome Parceiro (Parceiro)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "2",
+					"isNuable": "false"
+				},
+				{
+					"name": "COMPLEMENTO",
+					"id": "COMPLEMENTO",
+					"description": "Complemento",
+					"type": "S",
+					"width": "30",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "43",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODANT",
+					"id": "CODANT",
+					"description": "Código no SGE",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "106",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "SEXO",
+					"id": "SEXO",
+					"description": "Sexo",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "116",
+					"isNuable": "true",
+					"option": [{
+						"key": "F",
+						"value": "Feminino"
+					},
+					{
+						"key": "M",
+						"value": "Masculino"
+					}]
+				},
+				{
+					"name": "AGRUPAR",
+					"id": "AGRUPAR",
+					"description": "Agrupar Pagamentos na geração p/Banco",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "27",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "IDENTINSCESTAD",
+					"id": "IDENTINSCESTAD",
+					"description": "Insc. Estadual / Identidade",
+					"type": "S",
+					"width": "16",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "33",
+					"isNuable": "true"
+				},
+				{
+					"name": "DTULTCONTATO",
+					"id": "DTULTCONTATO",
+					"description": "Dt. Último contato",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "64",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_HORARIO",
+					"isReadOnly": "false",
+					"groupName": "Logística",
+					"isAdicional": "true",
+					"id": "AD_HORARIO",
+					"description": "Horario de Entrega",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "165",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "5 - Até as 14h",
+						"value": "5 - Até as 14h"
+					},
+					{
+						"key": "6 - Até as 15h",
+						"value": "6 - Até as 15h"
+					},
+					{
+						"key": "7 - Até as 16h",
+						"value": "7 - Até as 16h"
+					},
+					{
+						"key": "4 - Até as 13h",
+						"value": "4 - Até as 13h"
+					},
+					{
+						"key": "3 - Até as 12h",
+						"value": "3 - Até as 12h"
+					},
+					{
+						"key": "8 - Até as 17h",
+						"value": "8 - Até as 17h"
+					},
+					{
+						"key": "1 - Comercial",
+						"value": "1 - Comercial"
+					},
+					{
+						"key": "2 - Até as 11h",
+						"value": "2 - Até as 11h"
+					}]
+				},
+				{
+					"name": "HOMEPAGE",
+					"id": "HOMEPAGE",
+					"description": "HomePage",
+					"type": "S",
+					"width": "255",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "107",
+					"isNuable": "true"
+				},
+				{
+					"name": "FORNECEDOR",
+					"id": "FORNECEDOR",
+					"description": "Fornecedor",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "7",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "AD_SATISFPRECO",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_SATISFPRECO",
+					"description": "SATISFACAO: PREÇO",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "154",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "INSATISFEITO",
+						"value": "INSATISFEITO"
+					},
+					{
+						"key": "SATISFEITO",
+						"value": "SATISFEITO"
+					},
+					{
+						"key": "MUITO SATISFEITO",
+						"value": "MUITO SATISFEITO"
+					},
+					{
+						"key": "NUNCA COMPROU",
+						"value": "NUNCA COMPROU"
+					}]
+				},
+				{
+					"name": "SITRECEITA",
+					"isReadOnly": "true",
+					"groupName": "EDZ",
+					"id": "SITRECEITA",
+					"description": "Situação na Receita Federal",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "142",
+					"isNuable": "false",
+					"option": [{
+						"key": "I",
+						"value": "Indefinida"
+					},
+					{
+						"key": "B",
+						"value": "Restrição"
+					},
+					{
+						"key": "A",
+						"value": "Regular"
+					}]
+				},
+				{
+					"name": "AD_EMAILCOBRANCA",
+					"isReadOnly": "false",
+					"isAdicional": "true",
+					"id": "AD_EMAILCOBRANCA",
+					"description": "Email do Financeiro",
+					"type": "S",
+					"width": "100",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "166",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "CONTACESSO",
+					"id": "CONTACESSO",
+					"description": "Informações adicionais",
+					"type": "S",
+					"width": "30",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "80",
+					"isNuable": "true"
+				},
+				{
+					"name": "CSTIPIENT",
+					"id": "CSTIPIENT",
+					"description": "Código Sit.Trib.IPI Entrada",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "83",
+					"isNuable": "true",
+					"option": [{
+						"key": "0",
+						"value": "00-Entrada c/Recuperação de Crédito"
+					},
+					{
+						"key": "1",
+						"value": "01-Entrada c/Alíquota zero"
+					},
+					{
+						"key": "2",
+						"value": "02-Entrada Isenta"
+					},
+					{
+						"key": "3",
+						"value": "03-Entrada Não Tributada"
+					},
+					{
+						"key": "4",
+						"value": "04-Entrada Imune"
+					},
+					{
+						"key": "5",
+						"value": "05-Entrada c/Suspensão"
+					},
+					{
+						"key": "49",
+						"value": "49-Outras Entradas"
+					},
+					{
+						"key": "-1",
+						"value": "(-1)-Não sujeita ao IPI"
+					}]
+				},
+				{
+					"name": "MOTBLOQ",
+					"id": "MOTBLOQ",
+					"description": "Motivo de Bloqueio",
+					"type": "S",
+					"width": "4000",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "74",
+					"isNuable": "true"
+				},
+				{
+					"name": "AD_DIFICULDA",
+					"isReadOnly": "false",
+					"groupName": "Logística",
+					"isAdicional": "true",
+					"id": "AD_DIFICULDA",
+					"description": "Nível de Dificuldade",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "158",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "1-Normal",
+						"value": "1-Normal"
+					},
+					{
+						"key": "2-Distância/Escada",
+						"value": "2-Distância/Escada"
+					},
+					{
+						"key": "5-Complexo (Fila + D",
+						"value": "5-Complexo (Fila + Distância)"
+					},
+					{
+						"key": "4-Agendamento",
+						"value": "4-Agendamento"
+					},
+					{
+						"key": "3-Fila de Espera",
+						"value": "3-Fila de Espera"
+					}]
+				},
+				{
+					"name": "TIPOFATUR",
+					"id": "TIPOFATUR",
+					"description": "Tipo de faturamento",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "77",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Semanal"
+					},
+					{
+						"key": "Q",
+						"value": "Quinzenal"
+					},
+					{
+						"key": "M",
+						"value": "Mensal"
+					},
+					{
+						"key": "L",
+						"value": "Livre"
+					}]
+				},
+				{
+					"name": "AGENCIA",
+					"id": "AGENCIA",
+					"description": "Agência",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "11",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "USUARIO",
+					"id": "USUARIO",
+					"description": "Usuário",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "9",
+					"isNuable": "true",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "DTULTNEGOC",
+					"id": "DTULTNEGOC",
+					"description": "Última negociação",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "104",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "AD_CONTRATOFORN",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_CONTRATOFORN",
+					"description": "POSSUI CONTRATO ?",
+					"type": "S",
+					"width": "3",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "136",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "SIM",
+						"value": "SIM"
+					},
+					{
+						"key": "NAO",
+						"value": "NAO"
+					}]
+				},
+				{
+					"name": "AD_CNCONTRATO",
+					"isReadOnly": "false",
+					"isAdicional": "true",
+					"id": "AD_CNCONTRATO",
+					"description": "Cliente Possui Contrato?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "155",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "ECOMPRA",
+					"id": "ECOMPRA",
+					"description": "Email p/ pedido de compra",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "56",
+					"isNuable": "false",
+					"option": [{
+						"key": "C",
+						"value": "Contato"
+					},
+					{
+						"key": "N",
+						"value": "Não envia"
+					},
+					{
+						"key": "P",
+						"value": "Parceiro"
+					}]
+				},
+				{
+					"name": "OPERLOGIST",
+					"id": "OPERLOGIST",
+					"description": "Operador logístico",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "148",
+					"isNuable": "true",
+					"visivel": "N",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "AD_AUTORIZACAO",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_AUTORIZACAO",
+					"description": "Autorização",
+					"type": "S",
+					"width": "10",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "159",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "AD_PRECOPAP",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_PRECOPAP",
+					"description": "PRECO PAGO",
+					"type": "S",
+					"width": "15",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "164",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "10,01 a 12,00",
+						"value": "10,01 a 12,00"
+					},
+					{
+						"key": "9,01 a 10,00",
+						"value": "9,01 a 10,00"
+					},
+					{
+						"key": "8,00 a 9,00",
+						"value": "8,00 a 9,00"
+					},
+					{
+						"key": "> 12,00",
+						"value": "> 12,00"
+					}]
+				},
+				{
+					"name": "TARE",
+					"id": "TARE",
+					"description": "Tare",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "99",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "TIPJURO",
+					"id": "TIPJURO",
+					"description": "Tipo de juro",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "124",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Simples"
+					},
+					{
+						"key": "C",
+						"value": "Composto"
+					}]
+				},
+				{
+					"name": "AD_FORNEC",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_FORNEC",
+					"description": "FORNECEDOR",
+					"type": "S",
+					"width": "14",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "163",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "MARTINS",
+						"value": "MARTINS"
+					},
+					{
+						"key": "UBERPEL",
+						"value": "UBERPEL"
+					},
+					{
+						"key": "BRETAS",
+						"value": "BRETAS"
+					},
+					{
+						"key": "CARREFOUR",
+						"value": "CARREFOUR"
+					},
+					{
+						"key": "CASTRO NAVES",
+						"value": "CASTRO NAVES"
+					},
+					{
+						"key": "PAP. GLOBO",
+						"value": "PAP. GLOBO"
+					},
+					{
+						"key": "CRISTOPEL",
+						"value": "CRISTOPEL"
+					},
+					{
+						"key": "EXTRA",
+						"value": "EXTRA"
+					},
+					{
+						"key": "OUTROS",
+						"value": "OUTROS"
+					},
+					{
+						"key": "ARCOM",
+						"value": "ARCOM"
+					}]
+				},
+				{
+					"name": "ENTREGAENDCONTATO",
+					"id": "ENTREGAENDCONTATO",
+					"description": "Utiliza endereço de entrega do contato",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "121",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "AGRONOMO",
+					"id": "AGRONOMO",
+					"description": "Agrônomo",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "15",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "NOMEAGE",
+					"id": "NOMEAGE",
+					"description": "Nome da agência",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "25",
+					"isNuable": "true"
+				},
+				{
+					"name": "SELECIONADO",
+					"id": "SELECIONADO",
+					"description": "Seleção",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "36",
+					"isNuable": "true",
+					"option": [{
+						"key": "P",
+						"value": "P"
+					},
+					{
+						"key": "G",
+						"value": "G"
+					},
+					{
+						"key": "R",
+						"value": "R"
+					}]
+				},
+				{
+					"name": "VLRMINPEDCPA",
+					"id": "VLRMINPEDCPA",
+					"description": "Vlr mín por pedido",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "113",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "RETEMINSS",
+					"id": "RETEMINSS",
+					"description": "Calcula IRF",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "97",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "AD_FRETE",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_FRETE",
+					"description": "FRETE CIF OU FOB",
+					"type": "S",
+					"width": "3",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "162",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "CIF",
+						"value": "CIF"
+					},
+					{
+						"key": "FOB",
+						"value": "FOB"
+					}]
+				},
+				{
+					"name": "AD_QUALISERV",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_QUALISERV",
+					"description": "DECISÃO - QUAL.SERV. (1 A 4)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "140",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "CGC_CPF",
+					"id": "CGC_CPF",
+					"description": "CNPJ / CPF",
+					"type": "S",
+					"width": "14",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "30",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODEMP",
+					"fkTargetEntityName": "Empresa",
+					"fkRelationName": "Empresa",
+					"fkDescriptionField": "Empresa_NOMEFANTASIA",
+					"id": "CODEMP",
+					"description": "Empresa",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "102",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "CODVEND",
+					"fkTargetEntityName": "Vendedor",
+					"fkRelationName": "Vendedor",
+					"fkDescriptionField": "Vendedor_APELIDO",
+					"id": "CODVEND",
+					"description": "Vend. Preferencial",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "18",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODASSESSOR",
+					"fkTargetEntityName": "Vendedor",
+					"fkRelationName": "Assessor",
+					"fkDescriptionField": "Assessor_APELIDO",
+					"fkTargetFieldName": "CODVEND",
+					"id": "CODASSESSOR",
+					"description": "Assessor do Parceiro",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "20",
+					"isNuable": "true"
+				},
+				{
+					"name": "PERCMULTA",
+					"id": "PERCMULTA",
+					"description": "% de multa",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "125",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODTIPPARC",
+					"fkTargetEntityName": "Perfil",
+					"fkRelationName": "Perfil",
+					"fkDescriptionField": "Perfil_DESCRTIPPARC",
+					"id": "CODTIPPARC",
+					"description": "Perfil Principal",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "31",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODUSU",
+					"isReadOnly": "true",
+					"fkTargetEntityName": "Usuario",
+					"fkRelationName": "Usuario",
+					"fkDescriptionField": "Usuario_NOMEUSU",
+					"id": "CODUSU",
+					"description": "Cód. Usuário Alteração",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "58",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODEND",
+					"fkTargetEntityName": "Endereco",
+					"fkRelationName": "Endereco",
+					"fkDescriptionField": "Endereco_NOMEEND",
+					"id": "CODEND",
+					"description": "Endereço",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "40",
+					"isNuable": "false"
+				},
+				{
+					"name": "AD_SATISFENTREG",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_SATISFENTREG",
+					"description": "SATISFACAO: ENTREGA",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "149",
+					"isNuable": "true",
+					"visivel": "S",
+					"option": [{
+						"key": "INSATISFEITO",
+						"value": "INSATISFEITO"
+					},
+					{
+						"key": "SATISFEITO",
+						"value": "SATISFEITO"
+					},
+					{
+						"key": "NUNCA COMPROU",
+						"value": "NUNCA COMPROU"
+					},
+					{
+						"key": "MUITO SATISFEITO",
+						"value": "MUITO SATISFEITO"
+					}]
+				},
+				{
+					"name": "AD_PRECO",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_PRECO",
+					"description": "DECISÃO - PREÇO (1 A 4)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "141",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "CODCTABCOINT",
+					"fkTargetEntityName": "ContaBancaria",
+					"fkRelationName": "ContaBancaria",
+					"fkDescriptionField": "ContaBancaria_DESCRICAO",
+					"id": "CODCTABCOINT",
+					"description": "Conta bancária empresa",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "28",
+					"isNuable": "true"
+				},
+				{
+					"name": "CLIENTE",
+					"id": "CLIENTE",
+					"description": "Cliente",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "6",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "NUMEND",
+					"id": "NUMEND",
+					"description": "Número",
+					"type": "S",
+					"width": "6",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "42",
+					"isNuable": "true"
+				},
+				{
+					"name": "SITUACAO",
+					"id": "SITUACAO",
+					"description": "Situação",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "63",
+					"isNuable": "true",
+					"option": [{
+						"key": "E",
+						"value": "Excelente"
+					},
+					{
+						"key": "B",
+						"value": "Bom"
+					},
+					{
+						"key": "O",
+						"value": "Ótimo"
+					},
+					{
+						"key": "P",
+						"value": "Péssimo"
+					},
+					{
+						"key": "R",
+						"value": "Regular"
+					}]
+				},
+				{
+					"name": "SIMPLES",
+					"id": "SIMPLES",
+					"description": "Optante pelo Simples Nacional?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "115",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "DESCFIN",
+					"id": "DESCFIN",
+					"description": "% Desc. Financeiro",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "76",
+					"isNuable": "true"
+				},
+				{
+					"name": "TIPPESSOA",
+					"id": "TIPPESSOA",
+					"description": "Tipo de pessoa",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "5",
+					"isNuable": "false",
+					"option": [{
+						"key": "F",
+						"value": "Física"
+					},
+					{
+						"key": "J",
+						"value": "Jurídica"
+					}]
+				},
+				{
+					"name": "AD_PRAZO",
+					"isReadOnly": "false",
+					"groupName": "Pesquisa",
+					"isAdicional": "true",
+					"id": "AD_PRAZO",
+					"description": "DECISÃO - PRAZO PGTO. (1 A 4)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "144",
+					"isNuable": "true",
+					"visivel": "S"
+				},
+				{
+					"name": "EMAILNFE",
+					"id": "EMAILNFE",
+					"description": "E-mail p/ envio NF-e",
+					"type": "S",
+					"width": "255",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "150",
+					"isNuable": "true"
+				}]
+			},
+			{
+				"name": "PlanoConta4",
+				"description": "Plano Conta 4",
+				"path": "PlanoConta4",
+				"field": {
+					"name": "DESCRCTA",
+					"id": "PlanoConta4_DESCRCTA",
+					"description": "Descrição (Conta Contabil 4)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "93",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "PlanoConta3",
+				"description": "Plano Conta 3",
+				"path": "PlanoConta3",
+				"field": {
+					"name": "DESCRCTA",
+					"id": "PlanoConta3_DESCRCTA",
+					"description": "Descrição (Conta Contabil 3)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "91",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Bairro",
+				"description": "Bairro",
+				"path": "Bairro",
+				"field": {
+					"name": "NOMEBAI",
+					"id": "Bairro_NOMEBAI",
+					"description": "Nome (Bairro)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "45",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Banco",
+				"description": "Banco",
+				"path": "Banco",
+				"field": {
+					"name": "NOMEBCO",
+					"id": "Banco_NOMEBCO",
+					"description": "Descrição (Banco)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "23",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "PlanoConta2",
+				"description": "Plano Conta 2",
+				"path": "PlanoConta2",
+				"field": {
+					"name": "DESCRCTA",
+					"id": "PlanoConta2_DESCRCTA",
+					"description": "Descrição (Conta Contabil 2)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "89",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Perfil",
+				"description": "Perfil",
+				"path": "Perfil",
+				"field": {
+					"name": "DESCRTIPPARC",
+					"id": "Perfil_DESCRTIPPARC",
+					"description": "Descrição (Perfil)",
+					"type": "S",
+					"width": "60",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "32",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Usuario",
+				"description": "Usuário",
+				"path": "Usuario",
+				"field": {
+					"name": "NOMEUSU",
+					"id": "Usuario_NOMEUSU",
+					"description": "Nome (Usuário)",
+					"type": "S",
+					"width": "10",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "59",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "LocalFinanceiro",
+				"description": "Local",
+				"path": "LocalFinanceiro",
+				"field": {
+					"name": "DESCRLOCAL",
+					"id": "LocalFinanceiro_DESCRLOCAL",
+					"description": "Descrição (Local)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "123",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Endereco",
+				"description": "Endereço",
+				"path": "Endereco",
+				"field": {
+					"name": "NOMEEND",
+					"id": "Endereco_NOMEEND",
+					"description": "Nome (Endereço)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "41",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "PlanoConta",
+				"description": "Plano de Contas",
+				"path": "PlanoConta",
+				"field": {
+					"name": "DESCRCTA",
+					"id": "PlanoConta_DESCRCTA",
+					"description": "Descrição (Conta Contabil 1)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "87",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Regiao",
+				"description": "Região",
+				"path": "Regiao",
+				"field": {
+					"name": "NOMEREG",
+					"id": "Regiao_NOMEREG",
+					"description": "Nome (Região)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "49",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "NomeTabelasPreco",
+				"description": "Tabela de Preço",
+				"path": "NomeTabelasPreco",
+				"field": {
+					"name": "NOMETAB",
+					"id": "NomeTabelasPreco_NOMETAB",
+					"description": "Nome (Tabela de Preço)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "69",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "ContaBancaria",
+				"description": "Conta Bancária",
+				"path": "ContaBancaria",
+				"field": {
+					"name": "DESCRICAO",
+					"id": "ContaBancaria_DESCRICAO",
+					"description": "Descrição (abaContaBancEmp)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "29",
+					"isNuable": "true"
+				}
+			},
+			{
+				"name": "ParceiroMatriz",
+				"description": "Parceiro Matriz",
+				"path": "ParceiroMatriz",
+				"field": {
+					"name": "NOMEPARC",
+					"id": "ParceiroMatriz_NOMEPARC",
+					"description": "Nome Parceiro (Matriz)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "17",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Vendedor",
+				"description": "Vendedor",
+				"path": "Vendedor",
+				"field": {
+					"name": "APELIDO",
+					"id": "Vendedor_APELIDO",
+					"description": "Apelido (Vendedor)",
+					"type": "S",
+					"width": "15",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "19",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Empresa",
+				"description": "Empresa",
+				"path": "Empresa",
+				"field": {
+					"name": "NOMEFANTASIA",
+					"id": "Empresa_NOMEFANTASIA",
+					"description": "Nome Fantasia (Empresa)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "103",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Assessor",
+				"description": "Assessor",
+				"path": "Assessor",
+				"field": {
+					"name": "APELIDO",
+					"id": "Assessor_APELIDO",
+					"description": "Apelido (Acessor)",
+					"type": "S",
+					"width": "15",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "21",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Cidade",
+				"description": "Cidade",
+				"path": "Cidade",
+				"field": {
+					"name": "NOMECID",
+					"id": "Cidade_NOMECID",
+					"description": "Nome (Cidade)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "47",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "EmpresaPreferencial",
+				"description": "Empresa Preferencial do parceiro",
+				"path": "EmpresaPreferencial",
+				"field": {
+					"name": "NOMEFANTASIA",
+					"id": "EmpresaPreferencial_NOMEFANTASIA",
+					"description": "Nome Fantasia (Empresa Preferencial)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "120",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "NacionalidadeParceiro",
+				"description": "Nacionalidade do Parceiro",
+				"path": "ComplementoParc.NacionalidadeParceiro",
+				"field": {
+					"name": "DESCRICAO",
+					"id": "ComplementoParc_NacionalidadeParceiro_DESCRICAO",
+					"description": "Descrição (País Nacionalidade)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "206",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "BairroRecebimento",
+				"description": "Bairro para recebimento",
+				"path": "ComplementoParc.BairroRecebimento",
+				"field": {
+					"name": "NOMEBAI",
+					"id": "ComplementoParc_BairroRecebimento_NOMEBAI",
+					"description": "Nome (Bairro p/ Recebimento)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "183",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Bairro",
+				"description": "Bairro",
+				"path": "ComplementoParc.Bairro",
+				"field": {
+					"name": "NOMEBAI",
+					"id": "ComplementoParc_Bairro_NOMEBAI",
+					"description": "Nome (Bairro p/ Entrega)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "174",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "CidadeTrabalho",
+				"description": "Cidade Trabalho",
+				"path": "ComplementoParc.CidadeTrabalho",
+				"field": {
+					"name": "NOMECID",
+					"id": "ComplementoParc_CidadeTrabalho_NOMECID",
+					"description": "Nome (Cidade do Trabalho)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "195",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "CidadeRecebimento",
+				"description": "Cidade para Recebimento",
+				"path": "ComplementoParc.CidadeRecebimento",
+				"field": {
+					"name": "NOMECID",
+					"id": "ComplementoParc_CidadeRecebimento_NOMECID",
+					"description": "Nome (Cidade p/ Recebimento)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "185",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Moeda",
+				"description": "Moeda",
+				"path": "ComplementoParc.Moeda",
+				"field": {
+					"name": "NOMEMOEDA",
+					"id": "ComplementoParc_Moeda_NOMEMOEDA",
+					"description": "Nome (Moeda)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "200",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "TipoNegociacaoFilha",
+				"description": "Tipo de Negociação de Saída",
+				"path": "ComplementoParc.TipoNegociacaoFilha",
+				"field": {
+					"name": "DESCRTIPVENDA",
+					"id": "ComplementoParc_TipoNegociacaoFilha_DESCRTIPVENDA",
+					"description": "Descrição (abaSugestaoSaida)",
+					"type": "S",
+					"width": "36",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "232",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "BairroTrabalho",
+				"description": "Bairro Trabalho",
+				"path": "ComplementoParc.BairroTrabalho",
+				"field": {
+					"name": "NOMEBAI",
+					"id": "ComplementoParc_BairroTrabalho_NOMEBAI",
+					"description": "Nome (Bairro do Trabalho)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "193",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Transportadora",
+				"description": "Transportadora",
+				"path": "ComplementoParc.Transportadora",
+				"field": {
+					"name": "NOMEPARC",
+					"id": "ComplementoParc_Transportadora_NOMEPARC",
+					"description": "Nome Parceiro (Transportadora)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "202",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "EnderecoRecebimento",
+				"description": "Endereço de Recebimento",
+				"path": "ComplementoParc.EnderecoRecebimento",
+				"field": {
+					"name": "NOMEEND",
+					"id": "ComplementoParc_EnderecoRecebimento_NOMEEND",
+					"description": "Nome (Endereço p/ Recebimento)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "179",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "EnderecoTrabalho",
+				"description": "Endereço de Trabalho",
+				"path": "ComplementoParc.EnderecoTrabalho",
+				"field": {
+					"name": "NOMEEND",
+					"id": "ComplementoParc_EnderecoTrabalho_NOMEEND",
+					"description": "Nome (Endereço do Trabalho)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "189",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Endereco",
+				"description": "Endereço",
+				"path": "ComplementoParc.Endereco",
+				"field": {
+					"name": "NOMEEND",
+					"id": "ComplementoParc_Endereco_NOMEEND",
+					"description": "Nome (Endereço p/ Entrega)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "170",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "NomeTabelasPreco",
+				"description": "Tabela de Preço",
+				"path": "ComplementoParc.NomeTabelasPreco",
+				"field": {
+					"name": "NOMETAB",
+					"id": "ComplementoParc_NomeTabelasPreco_NOMETAB",
+					"description": "Nome (Tabela Preço Modulo Cotação)",
+					"type": "S",
+					"width": "40",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "221",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "Cidade",
+				"description": "Cidade",
+				"path": "ComplementoParc.Cidade",
+				"field": {
+					"name": "NOMECID",
+					"id": "ComplementoParc_Cidade_NOMECID",
+					"description": "Nome (Cidade p/ Entrega)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "176",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "TipoNegociacao",
+				"description": "Tipo de Negociação",
+				"path": "ComplementoParc.TipoNegociacao",
+				"field": {
+					"name": "DESCRTIPVENDA",
+					"id": "ComplementoParc_TipoNegociacao_DESCRTIPVENDA",
+					"description": "Descrição (Entrada/Cotação)",
+					"type": "S",
+					"width": "36",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "229",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "NaturalidadeParceiro",
+				"description": "Naturalidade do Parceiro",
+				"path": "ComplementoParc.NaturalidadeParceiro",
+				"field": {
+					"name": "NOMECID",
+					"id": "ComplementoParc_NaturalidadeParceiro_NOMECID",
+					"description": "Nome (Cidade Naturalidade)",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "204",
+					"isNuable": "false"
+				}
+			},
+			{
+				"name": "ComplementoParc",
+				"description": "Dados Complementares de Parceiro",
+				"path": "ComplementoParc",
+				"field": [{
+					"name": "DTCREA",
+					"id": "ComplementoParc_DTCREA",
+					"description": "Data de Registro CREA",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "242",
+					"isNuable": "true"
+				},
+				{
+					"name": "NROCNH",
+					"id": "ComplementoParc_NROCNH",
+					"description": "Número da CNH",
+					"type": "S",
+					"width": "20",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "214",
+					"isNuable": "true"
+				},
+				{
+					"name": "SUGTIPNEGENTR",
+					"fkTargetEntityName": "TipoNegociacao",
+					"fkRelationName": "TipoNegociacao",
+					"fkDescriptionField": "ComplementoParc_TipoNegociacao_DESCRTIPVENDA",
+					"fkTargetFieldName": "CODTIPVENDA",
+					"id": "ComplementoParc_SUGTIPNEGENTR",
+					"description": "Sugestão Entrada/Cotação",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "228",
+					"isNuable": "false"
+				},
+				{
+					"name": "NATURALIDADE",
+					"fkTargetEntityName": "Cidade",
+					"fkRelationName": "NaturalidadeParceiro",
+					"fkDescriptionField": "ComplementoParc_NaturalidadeParceiro_NOMECID",
+					"fkTargetFieldName": "CODCID",
+					"id": "ComplementoParc_NATURALIDADE",
+					"description": "Naturalidade",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "203",
+					"isNuable": "true"
+				},
+				{
+					"name": "NUMTRAB",
+					"id": "ComplementoParc_NUMTRAB",
+					"description": "Número trabalho",
+					"type": "S",
+					"width": "6",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "190",
+					"isNuable": "true"
+				},
+				{
+					"name": "COMPLENTREGA",
+					"id": "ComplementoParc_COMPLENTREGA",
+					"description": "Complemento entrega",
+					"type": "S",
+					"width": "10",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "172",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCRED",
+					"fkTargetEntityName": "GrupoAnaliseCredito",
+					"fkRelationName": "GrupoAnaliseCredito",
+					"id": "ComplementoParc_CODCRED",
+					"description": "Fórm.p/Cálculo Lim.Crédito",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "234",
+					"isNuable": "true"
+				},
+				{
+					"name": "VIATRANSP",
+					"id": "ComplementoParc_VIATRANSP",
+					"description": "Via de transporte",
+					"type": "S",
+					"width": "2",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "219",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "CODCIDTRAB",
+					"fkTargetEntityName": "Cidade",
+					"fkRelationName": "CidadeTrabalho",
+					"fkDescriptionField": "ComplementoParc_CidadeTrabalho_NOMECID",
+					"fkTargetFieldName": "CODCID",
+					"id": "ComplementoParc_CODCIDTRAB",
+					"description": "Cód. Cidade Trabalho",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "194",
+					"isNuable": "false"
+				},
+				{
+					"name": "PLACAVEICULO",
+					"id": "ComplementoParc_PLACAVEICULO",
+					"description": "Placa do veículo",
+					"type": "S",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "213",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "GRUPODESCPARC",
+					"id": "ComplementoParc_GRUPODESCPARC",
+					"description": "Grupo Desconto Parceiro",
+					"type": "S",
+					"width": "15",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "223",
+					"isNuable": "true"
+				},
+				{
+					"name": "DIAPAG",
+					"id": "ComplementoParc_DIAPAG",
+					"description": "Dia para pagamento",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "212",
+					"isNuable": "true"
+				},
+				{
+					"name": "GERARFRETE",
+					"id": "ComplementoParc_GERARFRETE",
+					"description": "Gerar Conhec.Transp.",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "239",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "TIPMORADIA",
+					"id": "ComplementoParc_TIPMORADIA",
+					"description": "Tipo imóvel/moradia",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "227",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Outros sem despesa"
+					},
+					{
+						"key": "F",
+						"value": "Financiado"
+					},
+					{
+						"key": "A",
+						"value": "Alugado"
+					},
+					{
+						"key": "P",
+						"value": "Próprio"
+					},
+					{
+						"key": "O",
+						"value": "Outros com despesa"
+					}]
+				},
+				{
+					"name": "SEQENTREGA",
+					"id": "ComplementoParc_SEQENTREGA",
+					"description": "Sequência de entrega",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "167",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "NACIONALIDADE",
+					"fkTargetEntityName": "Pais",
+					"fkRelationName": "NacionalidadeParceiro",
+					"fkDescriptionField": "ComplementoParc_NacionalidadeParceiro_DESCRICAO",
+					"fkTargetFieldName": "CODPAIS",
+					"id": "ComplementoParc_NACIONALIDADE",
+					"description": "Nacionalidade do parceiro",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "205",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODENDENTREGA",
+					"fkTargetEntityName": "Endereco",
+					"fkRelationName": "Endereco",
+					"fkDescriptionField": "ComplementoParc_Endereco_NOMEEND",
+					"fkTargetFieldName": "CODEND",
+					"id": "ComplementoParc_CODENDENTREGA",
+					"description": "Endereço p/ entrega",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "169",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODMOEDALIM",
+					"id": "ComplementoParc_CODMOEDALIM",
+					"description": "Moeda para limite",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "209",
+					"isNuable": "false",
+					"visivel": "N"
+				},
+				{
+					"name": "SEQVISITA",
+					"id": "ComplementoParc_SEQVISITA",
+					"description": "Sequência de visita",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "217",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "FATMIN",
+					"id": "ComplementoParc_FATMIN",
+					"description": "Faturamento Mínimo",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "238",
+					"isNuable": "true",
+					"visivel": "N"
+				},
+				{
+					"name": "DTALTER",
+					"id": "ComplementoParc_DTALTER",
+					"description": "Data de Alteração",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "236",
+					"isNuable": "false",
+					"visivel": "N"
+				},
+				{
+					"name": "USASAIDAFATPER",
+					"id": "ComplementoParc_USASAIDAFATPER",
+					"description": "Usa no Fat. por Período?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "235",
+					"isNuable": "false",
+					"option": [{
+						"key": "N",
+						"value": "Não"
+					},
+					{
+						"key": "S",
+						"value": "Sim"
+					}]
+				},
+				{
+					"name": "LONGITUDEENTREGA",
+					"isReadOnly": "true",
+					"nuCasasDecimais": "7",
+					"id": "ComplementoParc_LONGITUDEENTREGA",
+					"description": "Longitude p/ entrega",
+					"type": "S",
+					"width": "255",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "246",
+					"isNuable": "true"
+				},
+				{
+					"name": "CEPRECEB",
+					"id": "ComplementoParc_CEPRECEB",
+					"description": "CEP p/ recebimento",
+					"type": "S",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "177",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCIDENTREGA",
+					"fkTargetEntityName": "Cidade",
+					"fkRelationName": "Cidade",
+					"fkDescriptionField": "ComplementoParc_Cidade_NOMECID",
+					"fkTargetFieldName": "CODCID",
+					"id": "ComplementoParc_CODCIDENTREGA",
+					"description": "Cód. Cidade Entrega",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "175",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODENDRECEB",
+					"fkTargetEntityName": "Endereco",
+					"fkRelationName": "EnderecoRecebimento",
+					"fkDescriptionField": "ComplementoParc_EnderecoRecebimento_NOMEEND",
+					"fkTargetFieldName": "CODEND",
+					"id": "ComplementoParc_CODENDRECEB",
+					"description": "Endereço p/ recebimento",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "178",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODBAIRECEB",
+					"fkTargetEntityName": "Bairro",
+					"fkRelationName": "BairroRecebimento",
+					"fkDescriptionField": "ComplementoParc_BairroRecebimento_NOMEBAI",
+					"fkTargetFieldName": "CODBAI",
+					"id": "ComplementoParc_CODBAIRECEB",
+					"description": "Bairro p/ recebimento",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "182",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODBAIENTREGA",
+					"fkTargetEntityName": "Bairro",
+					"fkRelationName": "Bairro",
+					"fkDescriptionField": "ComplementoParc_Bairro_NOMEBAI",
+					"fkTargetFieldName": "CODBAI",
+					"id": "ComplementoParc_CODBAIENTREGA",
+					"description": "Bairro p/ entrega",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "173",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODENDTRAB",
+					"fkTargetEntityName": "Endereco",
+					"fkRelationName": "EnderecoTrabalho",
+					"fkDescriptionField": "ComplementoParc_EnderecoTrabalho_NOMEEND",
+					"fkTargetFieldName": "CODEND",
+					"id": "ComplementoParc_CODENDTRAB",
+					"description": "Endereço do trabalho",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "188",
+					"isNuable": "false"
+				},
+				{
+					"name": "RAMAL",
+					"id": "ComplementoParc_RAMAL",
+					"description": "Ramal (Dados Complementares de Parceiro)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "211",
+					"isNuable": "true"
+				},
+				{
+					"name": "CATEGORIACNH",
+					"id": "ComplementoParc_CATEGORIACNH",
+					"description": "Categoria da CNH",
+					"type": "S",
+					"width": "4",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "216",
+					"isNuable": "true"
+				},
+				{
+					"name": "VENCIMENTOCNH",
+					"id": "ComplementoParc_VENCIMENTOCNH",
+					"description": "Vencimento da CNH",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "215",
+					"isNuable": "true"
+				},
+				{
+					"name": "DTADM",
+					"id": "ComplementoParc_DTADM",
+					"description": "Data de admissão",
+					"type": "H",
+					"width": "7",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "222",
+					"isNuable": "true"
+				},
+				{
+					"name": "RENDAMENSAL",
+					"id": "ComplementoParc_RENDAMENSAL",
+					"description": "Renda mensal",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "230",
+					"isNuable": "true"
+				},
+				{
+					"name": "PAI",
+					"id": "ComplementoParc_PAI",
+					"description": "Pai (Dados Complementares de Parceiro)",
+					"type": "S",
+					"width": "36",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "226",
+					"isNuable": "true"
+				},
+				{
+					"name": "CONJUGE",
+					"id": "ComplementoParc_CONJUGE",
+					"description": "Cônjuge",
+					"type": "S",
+					"width": "36",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "210",
+					"isNuable": "true"
+				},
+				{
+					"name": "ISENTOTAXAMINBOLETA",
+					"id": "ComplementoParc_ISENTOTAXAMINBOLETA",
+					"description": "Isento taxa boleto",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "208",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "LIMCREDAUTOM",
+					"id": "ComplementoParc_LIMCREDAUTOM",
+					"description": "Efetiva Lim.Créd.Calc.automaticamente?",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "237",
+					"isNuable": "false",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "LOGISTICA",
+					"id": "ComplementoParc_LOGISTICA",
+					"description": "Logística",
+					"type": "S",
+					"width": "250",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "244",
+					"isNuable": "true"
+				},
+				{
+					"name": "EXIGEPEDIDO",
+					"id": "ComplementoParc_EXIGEPEDIDO",
+					"description": "Exige pedido na OS",
+					"type": "S",
+					"width": "1",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "207",
+					"isNuable": "true",
+					"option": [{
+						"key": "S",
+						"value": "Sim"
+					},
+					{
+						"key": "N",
+						"value": "Não"
+					}]
+				},
+				{
+					"name": "CODSUFRAMA",
+					"id": "ComplementoParc_CODSUFRAMA",
+					"description": "Código SUFRAMA",
+					"type": "S",
+					"width": "11",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "218",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODPARCTRANSP",
+					"fkTargetEntityName": "Parceiro",
+					"fkRelationName": "Transportadora",
+					"fkDescriptionField": "ComplementoParc_Transportadora_NOMEPARC",
+					"fkTargetFieldName": "CODPARC",
+					"id": "ComplementoParc_CODPARCTRANSP",
+					"description": "Cód. Parceiro Transportadora preferencial",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "201",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODPARC",
+					"id": "ComplementoParc_CODPARC",
+					"description": "Cód. Parceiro (Dados Complementares de Parceiro)",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "197",
+					"isNuable": "false"
+				},
+				{
+					"name": "TEMPORESID",
+					"id": "ComplementoParc_TEMPORESID",
+					"description": "Data ocupação residência",
+					"type": "D",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "198",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODBAITRAB",
+					"fkTargetEntityName": "Bairro",
+					"fkRelationName": "BairroTrabalho",
+					"fkDescriptionField": "ComplementoParc_BairroTrabalho_NOMEBAI",
+					"fkTargetFieldName": "CODBAI",
+					"id": "ComplementoParc_CODBAITRAB",
+					"description": "Bairro do trabalho",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "192",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODTABCOT",
+					"fkTargetEntityName": "NomeTabelasPreco",
+					"fkRelationName": "NomeTabelasPreco",
+					"fkDescriptionField": "ComplementoParc_NomeTabelasPreco_NOMETAB",
+					"fkTargetFieldName": "CODTAB",
+					"id": "ComplementoParc_CODTABCOT",
+					"description": "Tabela p/ usar módulo cotação",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "220",
+					"isNuable": "true"
+				},
+				{
+					"name": "CEPENTREGA",
+					"id": "ComplementoParc_CEPENTREGA",
+					"description": "CEP p/ entrega",
+					"type": "S",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "168",
+					"isNuable": "true"
+				},
+				{
+					"name": "CREA",
+					"id": "ComplementoParc_CREA",
+					"description": "Número CREA",
+					"type": "S",
+					"width": "12",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "241",
+					"isNuable": "true"
+				},
+				{
+					"name": "CEPTRAB",
+					"id": "ComplementoParc_CEPTRAB",
+					"description": "CEP do trabalho",
+					"type": "S",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "187",
+					"isNuable": "true"
+				},
+				{
+					"name": "MULTHORAEXTRA",
+					"id": "ComplementoParc_MULTHORAEXTRA",
+					"description": "Mult. por Hora Extra",
+					"type": "F",
+					"width": "8",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "240",
+					"isNuable": "true"
+				},
+				{
+					"name": "SUGTIPNEGSAID",
+					"fkTargetEntityName": "TipoNegociacao",
+					"fkRelationName": "TipoNegociacaoFilha",
+					"fkDescriptionField": "ComplementoParc_TipoNegociacaoFilha_DESCRTIPVENDA",
+					"fkTargetFieldName": "CODTIPVENDA",
+					"id": "ComplementoParc_SUGTIPNEGSAID",
+					"description": "Sugestão Saída",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "231",
+					"isNuable": "false"
+				},
+				{
+					"name": "NUMENTREGA",
+					"id": "ComplementoParc_NUMENTREGA",
+					"description": "Número entrega",
+					"type": "S",
+					"width": "6",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "171",
+					"isNuable": "true"
+				},
+				{
+					"name": "MAE",
+					"id": "ComplementoParc_MAE",
+					"description": "Mãe (Dados Complementares de Parceiro)",
+					"type": "S",
+					"width": "36",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "225",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODCIDRECEB",
+					"fkTargetEntityName": "Cidade",
+					"fkRelationName": "CidadeRecebimento",
+					"fkDescriptionField": "ComplementoParc_CidadeRecebimento_NOMECID",
+					"fkTargetFieldName": "CODCID",
+					"id": "ComplementoParc_CODCIDRECEB",
+					"description": "Cód. Cidade Recebimento",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "184",
+					"isNuable": "false"
+				},
+				{
+					"name": "CODMOEDARENDA",
+					"fkTargetEntityName": "Moeda",
+					"fkRelationName": "Moeda",
+					"fkDescriptionField": "ComplementoParc_Moeda_NOMEMOEDA",
+					"fkTargetFieldName": "CODMOEDA",
+					"id": "ComplementoParc_CODMOEDARENDA",
+					"description": "Moeda p/ renda",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "199",
+					"isNuable": "true"
+				},
+				{
+					"name": "LATITUDEENTREGA",
+					"isReadOnly": "true",
+					"nuCasasDecimais": "7",
+					"id": "ComplementoParc_LATITUDEENTREGA",
+					"description": "Latitude p/ entrega",
+					"type": "S",
+					"width": "255",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "245",
+					"isNuable": "true"
+				},
+				{
+					"name": "COMPLRECEB",
+					"id": "ComplementoParc_COMPLRECEB",
+					"description": "Complemento recebimento",
+					"type": "S",
+					"width": "30",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "181",
+					"isNuable": "true"
+				},
+				{
+					"name": "CODUSU",
+					"id": "ComplementoParc_CODUSU",
+					"description": "Cód. Usuário",
+					"type": "I",
+					"width": "5",
+					"isAutoNum": "false",
+					"hasDefaultValue": "true",
+					"order": "233",
+					"isNuable": "false",
+					"visivel": "N"
+				},
+				{
+					"name": "NUMRECEB",
+					"id": "ComplementoParc_NUMRECEB",
+					"description": "Número recebimento",
+					"type": "S",
+					"width": "6",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "180",
+					"isNuable": "true"
+				},
+				{
+					"name": "COMPLTRAB",
+					"id": "ComplementoParc_COMPLTRAB",
+					"description": "Complemento trabalho",
+					"type": "S",
+					"width": "30",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "191",
+					"isNuable": "true"
+				},
+				{
+					"name": "LOCALTRAB",
+					"id": "ComplementoParc_LOCALTRAB",
+					"description": "Local de trabalho",
+					"type": "S",
+					"width": "36",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "186",
+					"isNuable": "true"
+				},
+				{
+					"name": "UFCREA",
+					"id": "ComplementoParc_UFCREA",
+					"description": "UF CREA expedidor",
+					"type": "S",
+					"width": "2",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "243",
+					"isNuable": "true"
+				},
+				{
+					"name": "TELTRAB",
+					"id": "ComplementoParc_TELTRAB",
+					"description": "Telefone do trabalho",
+					"type": "S",
+					"width": "13",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "196",
+					"isNuable": "true"
+				},
+				{
+					"name": "IDENTIFICACAO",
+					"id": "ComplementoParc_IDENTIFICACAO",
+					"description": "Identificação do Parceiro",
+					"type": "S",
+					"width": "15",
+					"isAutoNum": "false",
+					"hasDefaultValue": "false",
+					"order": "224",
+					"isNuable": "true",
+					"visivel": "N"
+				}]
+			}]
+		}
+	}
+}

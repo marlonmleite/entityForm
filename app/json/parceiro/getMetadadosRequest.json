@@ -1,0 +1,238 @@
+{
+	"serviceName": "CRUDServiceProvider.getMetadados",
+	"requestBody": {
+		"dataSet": {
+			"rootEntity": "Parceiro",
+			"includePresentationFields": "S",
+			"crudListener": "br.com.sankhya.modelcore.crudlisteners.ParceiroCrudListener",
+			"processAmbiguous": "true",
+			"datasetid": "1412958082469_1",
+			"entity": [{
+				"path": "",
+				"fieldset": [{
+					"list": "*"
+				},
+				{
+					"except": "true",
+					"list": "CODTABST,RETEMCSL,CODROTA,CODUSUCOBR,USATABCRFORN,DIASEM,RETEMCOFINS,RETEMPIS,MODELONFDES,DESCRROTA,,SERIENFDES,PERCDESCESPECIAL,VALDESCGRDCAR,NATUREZAOPERDES"
+				}]
+			},
+			{
+				"path": "PlanoConta4",
+				"field": {
+					"name": "DESCRCTA"
+				}
+			},
+			{
+				"path": "PlanoConta3",
+				"field": {
+					"name": "DESCRCTA"
+				}
+			},
+			{
+				"path": "Bairro",
+				"field": {
+					"name": "NOMEBAI"
+				}
+			},
+			{
+				"path": "Banco",
+				"field": {
+					"name": "NOMEBCO"
+				}
+			},
+			{
+				"path": "PlanoConta2",
+				"field": {
+					"name": "DESCRCTA"
+				}
+			},
+			{
+				"path": "Perfil",
+				"field": {
+					"name": "DESCRTIPPARC"
+				}
+			},
+			{
+				"path": "Usuario",
+				"field": {
+					"name": "NOMEUSU"
+				}
+			},
+			{
+				"path": "LocalFinanceiro",
+				"field": {
+					"name": "DESCRLOCAL"
+				}
+			},
+			{
+				"path": "Endereco",
+				"field": {
+					"name": "NOMEEND"
+				}
+			},
+			{
+				"path": "PlanoConta",
+				"field": {
+					"name": "DESCRCTA"
+				}
+			},
+			{
+				"path": "Regiao",
+				"field": {
+					"name": "NOMEREG"
+				}
+			},
+			{
+				"path": "NomeTabelasPreco",
+				"field": {
+					"name": "NOMETAB"
+				}
+			},
+			{
+				"path": "ContaBancaria",
+				"field": {
+					"name": "DESCRICAO"
+				}
+			},
+			{
+				"path": "ParceiroMatriz",
+				"field": {
+					"name": "NOMEPARC"
+				}
+			},
+			{
+				"path": "Vendedor",
+				"field": {
+					"name": "APELIDO"
+				}
+			},
+			{
+				"path": "Empresa",
+				"field": {
+					"name": "NOMEFANTASIA"
+				}
+			},
+			{
+				"path": "Assessor",
+				"field": {
+					"name": "APELIDO"
+				}
+			},
+			{
+				"path": "Cidade",
+				"field": {
+					"name": "NOMECID"
+				}
+			},
+			{
+				"path": "EmpresaPreferencial",
+				"field": {
+					"name": "NOMEFANTASIA"
+				}
+			},
+			{
+				"path": "ComplementoParc.NacionalidadeParceiro",
+				"field": {
+					"name": "DESCRICAO"
+				}
+			},
+			{
+				"path": "ComplementoParc.BairroRecebimento",
+				"field": {
+					"name": "NOMEBAI"
+				}
+			},
+			{
+				"path": "ComplementoParc.Bairro",
+				"field": {
+					"name": "NOMEBAI"
+				}
+			},
+			{
+				"path": "ComplementoParc.CidadeTrabalho",
+				"field": {
+					"name": "NOMECID"
+				}
+			},
+			{
+				"path": "ComplementoParc.CidadeRecebimento",
+				"field": {
+					"name": "NOMECID"
+				}
+			},
+			{
+				"path": "ComplementoParc.Moeda",
+				"field": {
+					"name": "NOMEMOEDA"
+				}
+			},
+			{
+				"path": "ComplementoParc.TipoNegociacaoFilha",
+				"field": {
+					"name": "DESCRTIPVENDA"
+				}
+			},
+			{
+				"path": "ComplementoParc.BairroTrabalho",
+				"field": {
+					"name": "NOMEBAI"
+				}
+			},
+			{
+				"path": "ComplementoParc.Transportadora",
+				"field": {
+					"name": "NOMEPARC"
+				}
+			},
+			{
+				"path": "ComplementoParc.EnderecoRecebimento",
+				"field": {
+					"name": "NOMEEND"
+				}
+			},
+			{
+				"path": "ComplementoParc.EnderecoTrabalho",
+				"field": {
+					"name": "NOMEEND"
+				}
+			},
+			{
+				"path": "ComplementoParc.Endereco",
+				"field": {
+					"name": "NOMEEND"
+				}
+			},
+			{
+				"path": "ComplementoParc.NomeTabelasPreco",
+				"field": {
+					"name": "NOMETAB"
+				}
+			},
+			{
+				"path": "ComplementoParc.Cidade",
+				"field": {
+					"name": "NOMECID"
+				}
+			},
+			{
+				"path": "ComplementoParc.TipoNegociacao",
+				"field": {
+					"name": "DESCRTIPVENDA"
+				}
+			},
+			{
+				"path": "ComplementoParc.NaturalidadeParceiro",
+				"field": {
+					"name": "NOMECID"
+				}
+			},
+			{
+				"path": "ComplementoParc",
+				"fieldset": {
+					"list": "*"
+				}
+			}]
+		}
+	}
+}
