@@ -1,4 +1,4 @@
-{
+Ôªø{
 	"serviceName": "CRUDServiceProvider.getMetadados",
 	"status": "1",
 	"responseBody": {
@@ -14,7 +14,7 @@
 				"field": [{
 					"name": "IPIINCICMS",
 					"id": "IPIINCICMS",
-					"description": "IPI incide no c·lculo do ICMS",
+					"description": "IPI incide no c√°lculo do ICMS",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -23,7 +23,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -56,7 +56,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -66,7 +66,7 @@
 				{
 					"name": "ALIQISSRETSIMPLES",
 					"id": "ALIQISSRETSIMPLES",
-					"description": "AlÌquota ISS Ret/Simples",
+					"description": "Al√≠quota ISS Ret/Simples",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -91,7 +91,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -139,7 +139,7 @@
 				{
 					"name": "OBSERVACOES",
 					"id": "OBSERVACOES",
-					"description": "ObservaÁıes",
+					"description": "Observa√ß√µes",
 					"type": "S",
 					"width": "4000",
 					"isAutoNum": "false",
@@ -163,7 +163,7 @@
 				{
 					"name": "DESCSTIVA",
 					"id": "DESCSTIVA",
-					"description": "Considera desconto no c·lculo de ST por IVA",
+					"description": "Considera desconto no c√°lculo de ST por IVA",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -176,7 +176,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -185,7 +185,7 @@
 					"groupName": "Pesquisa",
 					"isAdicional": "true",
 					"id": "AD_QUALIPROD",
-					"description": "DECIS√O - QUAL. PROD. (1 A 4)",
+					"description": "DECIS√ÉO - QUAL. PROD. (1 A 4)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -197,7 +197,7 @@
 				{
 					"name": "TOLERINADIMP",
 					"id": "TOLERINADIMP",
-					"description": "Toler‚ncia p/ inadimplÍncia",
+					"description": "Toler√¢ncia p/ inadimpl√™ncia",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -260,7 +260,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -307,13 +307,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "CODCTABCO",
 					"id": "CODCTABCO",
-					"description": "Conta banc·ria parceiro",
+					"description": "Conta banc√°ria parceiro",
 					"type": "S",
 					"width": "14",
 					"isAutoNum": "false",
@@ -324,7 +324,7 @@
 				{
 					"name": "LIMCREDMENSAL",
 					"id": "LIMCREDMENSAL",
-					"description": "Limite crÈdito mensal",
+					"description": "Limite cr√©dito mensal",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -346,7 +346,7 @@
 				{
 					"name": "MEDICO",
 					"id": "MEDICO",
-					"description": "MÈdico",
+					"description": "M√©dico",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -359,13 +359,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "PERCJURO",
 					"id": "PERCJURO",
-					"description": "% de juro (di·rio)",
+					"description": "% de juro (di√°rio)",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -385,7 +385,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -395,7 +395,7 @@
 				{
 					"name": "CODUNIMED",
 					"id": "CODUNIMED",
-					"description": "CÛd. Unimed",
+					"description": "C√≥d. Unimed",
 					"type": "S",
 					"width": "17",
 					"isAutoNum": "false",
@@ -407,7 +407,7 @@
 					"name": "DTALTER",
 					"isReadOnly": "true",
 					"id": "DTALTER",
-					"description": "Data alteraÁ„o",
+					"description": "Data altera√ß√£o",
 					"type": "H",
 					"width": "7",
 					"isAutoNum": "false",
@@ -427,7 +427,7 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -446,7 +446,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -456,7 +456,7 @@
 				{
 					"name": "IDESTRANGEIRO",
 					"id": "IDESTRANGEIRO",
-					"description": "IdentificaÁ„o de Estrangeiro",
+					"description": "Identifica√ß√£o de Estrangeiro",
 					"type": "S",
 					"width": "14",
 					"isAutoNum": "false",
@@ -467,7 +467,7 @@
 				{
 					"name": "CLASSIFICMS",
 					"id": "CLASSIFICMS",
-					"description": "ClassificaÁ„o ICMS",
+					"description": "Classifica√ß√£o ICMS",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -505,7 +505,7 @@
 					"fkRelationName": "NomeTabelasPreco",
 					"fkDescriptionField": "NomeTabelasPreco_NOMETAB",
 					"id": "CODTAB",
-					"description": "Tabela de PreÁo",
+					"description": "Tabela de Pre√ßo",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -516,7 +516,7 @@
 				{
 					"name": "GRUPOAUTOR",
 					"id": "GRUPOAUTOR",
-					"description": "Grupo de autorizaÁ„o",
+					"description": "Grupo de autoriza√ß√£o",
 					"type": "S",
 					"width": "30",
 					"isAutoNum": "false",
@@ -554,7 +554,7 @@
 				{
 					"name": "PERCCUSVAR",
 					"id": "PERCCUSVAR",
-					"description": "% de Custo Vari·vel",
+					"description": "% de Custo Vari√°vel",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -577,7 +577,7 @@
 					"visivel": "S",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -615,7 +615,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o envia"
+						"value": "N√£o envia"
 					}]
 				},
 				{
@@ -630,7 +630,7 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -640,7 +640,7 @@
 				{
 					"name": "FLEX",
 					"id": "FLEX",
-					"description": "Usar CrÈd.Flex?",
+					"description": "Usar Cr√©d.Flex?",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -653,13 +653,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "RAZAOSOCIAL",
 					"id": "RAZAOSOCIAL",
-					"description": "Raz„o social",
+					"description": "Raz√£o social",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -695,7 +695,7 @@
 				{
 					"name": "CSTIPISAI",
 					"id": "CSTIPISAI",
-					"description": "CÛdigo Sit.Trib.IPI SaÌda",
+					"description": "C√≥digo Sit.Trib.IPI Sa√≠da",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -704,35 +704,35 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "50",
-						"value": "50-SaÌda c/RecuperaÁ„o de CrÈdito"
+						"value": "50-Sa√≠da c/Recupera√ß√£o de Cr√©dito"
 					},
 					{
 						"key": "51",
-						"value": "51-SaÌda c/AlÌquota zero"
+						"value": "51-Sa√≠da c/Al√≠quota zero"
 					},
 					{
 						"key": "52",
-						"value": "52-SaÌda Isenta"
+						"value": "52-Sa√≠da Isenta"
 					},
 					{
 						"key": "53",
-						"value": "53-SaÌda N„o Tributada"
+						"value": "53-Sa√≠da N√£o Tributada"
 					},
 					{
 						"key": "54",
-						"value": "54-SaÌda Imune"
+						"value": "54-Sa√≠da Imune"
 					},
 					{
 						"key": "55",
-						"value": "55-SaÌda c/Suspens„o"
+						"value": "55-Sa√≠da c/Suspens√£o"
 					},
 					{
 						"key": "99",
-						"value": "99-Outras SaÌdas"
+						"value": "99-Outras Sa√≠das"
 					},
 					{
 						"key": "-1",
-						"value": "(-1)-N„o sujeita ao IPI"
+						"value": "(-1)-N√£o sujeita ao IPI"
 					}]
 				},
 				{
@@ -740,7 +740,7 @@
 					"isReadOnly": "true",
 					"groupName": "EDZ",
 					"id": "SITSINTEGRA",
-					"description": "SituaÁ„o no Sintegra",
+					"description": "Situa√ß√£o no Sintegra",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -753,7 +753,7 @@
 					},
 					{
 						"key": "B",
-						"value": "RestriÁ„o"
+						"value": "Restri√ß√£o"
 					},
 					{
 						"key": "A",
@@ -776,7 +776,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -797,7 +797,7 @@
 				{
 					"name": "MEIRJ",
 					"id": "MEIRJ",
-					"description": "Micro empres·rio individual(RJ)",
+					"description": "Micro empres√°rio individual(RJ)",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -806,7 +806,7 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -841,7 +841,7 @@
 				{
 					"name": "TIPOGERBOLETO",
 					"id": "TIPOGERBOLETO",
-					"description": "Tipo geraÁ„o boleto",
+					"description": "Tipo gera√ß√£o boleto",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -878,7 +878,7 @@
 					"fkRelationName": "Regiao",
 					"fkDescriptionField": "Regiao_NOMEREG",
 					"id": "CODREG",
-					"description": "Regi„o",
+					"description": "Regi√£o",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -889,7 +889,7 @@
 				{
 					"name": "QTDMAXTITVENCIDOS",
 					"id": "QTDMAXTITVENCIDOS",
-					"description": "Qtd. m·x. de tÌtulos vencidos",
+					"description": "Qtd. m√°x. de t√≠tulos vencidos",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -900,7 +900,7 @@
 				{
 					"name": "PRAZOPAG",
 					"id": "PRAZOPAG",
-					"description": "Prazo mÈdio pagamento",
+					"description": "Prazo m√©dio pagamento",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -911,7 +911,7 @@
 				{
 					"name": "CODPARC",
 					"id": "CODPARC",
-					"description": "CÛd. Parceiro (Parceiro)",
+					"description": "C√≥d. Parceiro (Parceiro)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "true",
@@ -942,7 +942,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -961,11 +961,11 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "Z",
-						"value": "Arquivo compactado (Extens„o ZIP)"
+						"value": "Arquivo compactado (Extens√£o ZIP)"
 					},
 					{
 						"key": "X",
-						"value": "Arquivo normal (Extens„o XML)"
+						"value": "Arquivo normal (Extens√£o XML)"
 					}]
 				},
 				{
@@ -986,7 +986,7 @@
 				{
 					"name": "RETEMISS",
 					"id": "RETEMISS",
-					"description": "RetÈm ISS",
+					"description": "Ret√©m ISS",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -995,7 +995,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1019,7 +1019,7 @@
 					"fkRelationName": "Cidade",
 					"fkDescriptionField": "Cidade_NOMECID",
 					"id": "CODCID",
-					"description": "CÛd. Cidade",
+					"description": "C√≥d. Cidade",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1099,7 +1099,7 @@
 				{
 					"name": "CODAGE",
 					"id": "CODAGE",
-					"description": "AgÍncia banc·ria",
+					"description": "Ag√™ncia banc√°ria",
 					"type": "S",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1110,7 +1110,7 @@
 				{
 					"name": "DIASVARPAGTO",
 					"id": "DIASVARPAGTO",
-					"description": "AntecipaÁ„o/Atraso recebimento(em dias)",
+					"description": "Antecipa√ß√£o/Atraso recebimento(em dias)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1124,7 +1124,7 @@
 					"fkRelationName": "PlanoConta",
 					"fkDescriptionField": "PlanoConta_DESCRCTA",
 					"id": "CODCTACTB",
-					"description": "Conta cont·bil 1",
+					"description": "Conta cont√°bil 1",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1135,7 +1135,7 @@
 				{
 					"name": "RETSTVENDA",
 					"id": "RETSTVENDA",
-					"description": "Retirar ST do preÁo de venda do item",
+					"description": "Retirar ST do pre√ßo de venda do item",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -1148,7 +1148,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -1178,13 +1178,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "QTDMAXPEDCPA",
 					"id": "QTDMAXPEDCPA",
-					"description": "Qtd m·x itens por pedido",
+					"description": "Qtd m√°x itens por pedido",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1231,8 +1231,8 @@
 						"value": "O MIX DEVE SER AMPL."
 					},
 					{
-						"key": "N√O CONHE«O O MIX",
-						"value": "N√O CONHE«O O MIX"
+						"key": "N√ÉO CONHE√áO O MIX",
+						"value": "N√ÉO CONHE√áO O MIX"
 					}]
 				},
 				{
@@ -1251,7 +1251,7 @@
 				{
 					"name": "CEI",
 					"id": "CEI",
-					"description": "Cad. EspecÌfico do INSS - CEI",
+					"description": "Cad. Espec√≠fico do INSS - CEI",
 					"type": "S",
 					"width": "12",
 					"isAutoNum": "false",
@@ -1271,7 +1271,7 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1281,7 +1281,7 @@
 				{
 					"name": "LIMCRED",
 					"id": "LIMCRED",
-					"description": "Limite de crÈdito",
+					"description": "Limite de cr√©dito",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -1292,7 +1292,7 @@
 				{
 					"name": "DTNASC",
 					"id": "DTNASC",
-					"description": "Data nascimento/FundaÁ„o",
+					"description": "Data nascimento/Funda√ß√£o",
 					"type": "D",
 					"width": "8",
 					"isAutoNum": "false",
@@ -1303,7 +1303,7 @@
 				{
 					"name": "INDNATRET",
 					"id": "INDNATRET",
-					"description": "Natureza da RetenÁ„o na Fonte",
+					"description": "Natureza da Reten√ß√£o na Fonte",
 					"type": "S",
 					"width": "2",
 					"isAutoNum": "false",
@@ -1312,15 +1312,15 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "01",
-						"value": "01 - RetenÁ„o por ”rg„os, Autarquias e FundaÁıes Federais"
+						"value": "01 - Reten√ß√£o por √ìrg√£os, Autarquias e Funda√ß√µes Federais"
 					},
 					{
 						"key": "02",
-						"value": "02 - RetenÁ„o por outras Entidades Adm.P˙blica Federal"
+						"value": "02 - Reten√ß√£o por outras Entidades Adm.P√∫blica Federal"
 					},
 					{
 						"key": "03",
-						"value": "03 - RetenÁ„o por Pessoas JurÌdicas de Direito Privado"
+						"value": "03 - Reten√ß√£o por Pessoas Jur√≠dicas de Direito Privado"
 					},
 					{
 						"key": "04",
@@ -1328,11 +1328,11 @@
 					},
 					{
 						"key": "05",
-						"value": "05 - RetenÁ„o por Fabricante de M·quinas e VeÌculos"
+						"value": "05 - Reten√ß√£o por Fabricante de M√°quinas e Ve√≠culos"
 					},
 					{
 						"key": "99",
-						"value": "99 - Outras RetenÁıes"
+						"value": "99 - Outras Reten√ß√µes"
 					}]
 				},
 				{
@@ -1340,7 +1340,7 @@
 					"isReadOnly": "true",
 					"groupName": "EDZ",
 					"id": "SITCCF",
-					"description": "SituaÁ„o no CCF",
+					"description": "Situa√ß√£o no CCF",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -1357,7 +1357,7 @@
 					},
 					{
 						"key": "B",
-						"value": "RestriÁ„o"
+						"value": "Restri√ß√£o"
 					}]
 				},
 				{
@@ -1367,7 +1367,7 @@
 					"fkDescriptionField": "PlanoConta4_DESCRCTA",
 					"fkTargetFieldName": "CODCTACTB",
 					"id": "CODCTACTB4",
-					"description": "Conta cont·bil 4",
+					"description": "Conta cont√°bil 4",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1382,7 +1382,7 @@
 					"fkDescriptionField": "PlanoConta3_DESCRCTA",
 					"fkTargetFieldName": "CODCTACTB",
 					"id": "CODCTACTB3",
-					"description": "Conta cont·bil 3",
+					"description": "Conta cont√°bil 3",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1409,7 +1409,7 @@
 					"fkDescriptionField": "PlanoConta2_DESCRCTA",
 					"fkTargetFieldName": "CODCTACTB",
 					"id": "CODCTACTB2",
-					"description": "Conta cont·bil 2",
+					"description": "Conta cont√°bil 2",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1455,7 +1455,7 @@
 					"fkDescriptionField": "LocalFinanceiro_DESCRLOCAL",
 					"fkTargetFieldName": "CODLOCAL",
 					"id": "CODLOCALPADRAO",
-					"description": "Local padr„o para produtos",
+					"description": "Local padr√£o para produtos",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1476,7 +1476,7 @@
 					"visivel": "N",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1495,7 +1495,7 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1518,7 +1518,7 @@
 					"fkTargetEntityName": "GrupoAnaliseCredito",
 					"fkRelationName": "GrupoAnaliseCredito",
 					"id": "CODCRED",
-					"description": "CrÈdito",
+					"description": "Cr√©dito",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1530,10 +1530,10 @@
 				{
 					"name": "AD_PRIORIDAD",
 					"isReadOnly": "false",
-					"groupName": "LogÌstica",
+					"groupName": "Log√≠stica",
 					"isAdicional": "true",
 					"id": "AD_PRIORIDAD",
-					"description": "NÌvel de Prioridade",
+					"description": "N√≠vel de Prioridade",
 					"type": "S",
 					"width": "20",
 					"isAutoNum": "false",
@@ -1575,7 +1575,7 @@
 				{
 					"name": "CODANT",
 					"id": "CODANT",
-					"description": "CÛdigo no SGE",
+					"description": "C√≥digo no SGE",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1606,7 +1606,7 @@
 				{
 					"name": "AGRUPAR",
 					"id": "AGRUPAR",
-					"description": "Agrupar Pagamentos na geraÁ„o p/Banco",
+					"description": "Agrupar Pagamentos na gera√ß√£o p/Banco",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -1619,7 +1619,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -1636,7 +1636,7 @@
 				{
 					"name": "DTULTCONTATO",
 					"id": "DTULTCONTATO",
-					"description": "Dt. ⁄ltimo contato",
+					"description": "Dt. √öltimo contato",
 					"type": "H",
 					"width": "7",
 					"isAutoNum": "false",
@@ -1647,7 +1647,7 @@
 				{
 					"name": "AD_HORARIO",
 					"isReadOnly": "false",
-					"groupName": "LogÌstica",
+					"groupName": "Log√≠stica",
 					"isAdicional": "true",
 					"id": "AD_HORARIO",
 					"description": "Horario de Entrega",
@@ -1659,36 +1659,36 @@
 					"isNuable": "true",
 					"visivel": "S",
 					"option": [{
-						"key": "5 - AtÈ as 14h",
-						"value": "5 - AtÈ as 14h"
+						"key": "5 - At√© as 14h",
+						"value": "5 - At√© as 14h"
 					},
 					{
-						"key": "6 - AtÈ as 15h",
-						"value": "6 - AtÈ as 15h"
+						"key": "6 - At√© as 15h",
+						"value": "6 - At√© as 15h"
 					},
 					{
-						"key": "7 - AtÈ as 16h",
-						"value": "7 - AtÈ as 16h"
+						"key": "7 - At√© as 16h",
+						"value": "7 - At√© as 16h"
 					},
 					{
-						"key": "4 - AtÈ as 13h",
-						"value": "4 - AtÈ as 13h"
+						"key": "4 - At√© as 13h",
+						"value": "4 - At√© as 13h"
 					},
 					{
-						"key": "3 - AtÈ as 12h",
-						"value": "3 - AtÈ as 12h"
+						"key": "3 - At√© as 12h",
+						"value": "3 - At√© as 12h"
 					},
 					{
-						"key": "8 - AtÈ as 17h",
-						"value": "8 - AtÈ as 17h"
+						"key": "8 - At√© as 17h",
+						"value": "8 - At√© as 17h"
 					},
 					{
 						"key": "1 - Comercial",
 						"value": "1 - Comercial"
 					},
 					{
-						"key": "2 - AtÈ as 11h",
-						"value": "2 - AtÈ as 11h"
+						"key": "2 - At√© as 11h",
+						"value": "2 - At√© as 11h"
 					}]
 				},
 				{
@@ -1714,7 +1714,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1727,7 +1727,7 @@
 					"groupName": "Pesquisa",
 					"isAdicional": "true",
 					"id": "AD_SATISFPRECO",
-					"description": "SATISFACAO: PRE«O",
+					"description": "SATISFACAO: PRE√áO",
 					"type": "S",
 					"width": "20",
 					"isAutoNum": "false",
@@ -1757,7 +1757,7 @@
 					"isReadOnly": "true",
 					"groupName": "EDZ",
 					"id": "SITRECEITA",
-					"description": "SituaÁ„o na Receita Federal",
+					"description": "Situa√ß√£o na Receita Federal",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -1770,7 +1770,7 @@
 					},
 					{
 						"key": "B",
-						"value": "RestriÁ„o"
+						"value": "Restri√ß√£o"
 					},
 					{
 						"key": "A",
@@ -1794,7 +1794,7 @@
 				{
 					"name": "CONTACESSO",
 					"id": "CONTACESSO",
-					"description": "InformaÁıes adicionais",
+					"description": "Informa√ß√µes adicionais",
 					"type": "S",
 					"width": "30",
 					"isAutoNum": "false",
@@ -1805,7 +1805,7 @@
 				{
 					"name": "CSTIPIENT",
 					"id": "CSTIPIENT",
-					"description": "CÛdigo Sit.Trib.IPI Entrada",
+					"description": "C√≥digo Sit.Trib.IPI Entrada",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -1814,11 +1814,11 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "0",
-						"value": "00-Entrada c/RecuperaÁ„o de CrÈdito"
+						"value": "00-Entrada c/Recupera√ß√£o de Cr√©dito"
 					},
 					{
 						"key": "1",
-						"value": "01-Entrada c/AlÌquota zero"
+						"value": "01-Entrada c/Al√≠quota zero"
 					},
 					{
 						"key": "2",
@@ -1826,7 +1826,7 @@
 					},
 					{
 						"key": "3",
-						"value": "03-Entrada N„o Tributada"
+						"value": "03-Entrada N√£o Tributada"
 					},
 					{
 						"key": "4",
@@ -1834,7 +1834,7 @@
 					},
 					{
 						"key": "5",
-						"value": "05-Entrada c/Suspens„o"
+						"value": "05-Entrada c/Suspens√£o"
 					},
 					{
 						"key": "49",
@@ -1842,7 +1842,7 @@
 					},
 					{
 						"key": "-1",
-						"value": "(-1)-N„o sujeita ao IPI"
+						"value": "(-1)-N√£o sujeita ao IPI"
 					}]
 				},
 				{
@@ -1859,10 +1859,10 @@
 				{
 					"name": "AD_DIFICULDA",
 					"isReadOnly": "false",
-					"groupName": "LogÌstica",
+					"groupName": "Log√≠stica",
 					"isAdicional": "true",
 					"id": "AD_DIFICULDA",
-					"description": "NÌvel de Dificuldade",
+					"description": "N√≠vel de Dificuldade",
 					"type": "S",
 					"width": "20",
 					"isAutoNum": "false",
@@ -1875,12 +1875,12 @@
 						"value": "1-Normal"
 					},
 					{
-						"key": "2-Dist‚ncia/Escada",
-						"value": "2-Dist‚ncia/Escada"
+						"key": "2-Dist√¢ncia/Escada",
+						"value": "2-Dist√¢ncia/Escada"
 					},
 					{
 						"key": "5-Complexo (Fila + D",
-						"value": "5-Complexo (Fila + Dist‚ncia)"
+						"value": "5-Complexo (Fila + Dist√¢ncia)"
 					},
 					{
 						"key": "4-Agendamento",
@@ -1921,7 +1921,7 @@
 				{
 					"name": "AGENCIA",
 					"id": "AGENCIA",
-					"description": "AgÍncia",
+					"description": "Ag√™ncia",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -1930,7 +1930,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1940,7 +1940,7 @@
 				{
 					"name": "USUARIO",
 					"id": "USUARIO",
-					"description": "Usu·rio",
+					"description": "Usu√°rio",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -1949,7 +1949,7 @@
 					"isNuable": "true",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -1959,7 +1959,7 @@
 				{
 					"name": "DTULTNEGOC",
 					"id": "DTULTNEGOC",
-					"description": "⁄ltima negociaÁ„o",
+					"description": "√öltima negocia√ß√£o",
 					"type": "H",
 					"width": "7",
 					"isAutoNum": "false",
@@ -2010,7 +2010,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -2029,7 +2029,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o envia"
+						"value": "N√£o envia"
 					},
 					{
 						"key": "P",
@@ -2039,7 +2039,7 @@
 				{
 					"name": "OPERLOGIST",
 					"id": "OPERLOGIST",
-					"description": "Operador logÌstico",
+					"description": "Operador log√≠stico",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -2053,7 +2053,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -2062,7 +2062,7 @@
 					"groupName": "Pesquisa",
 					"isAdicional": "true",
 					"id": "AD_AUTORIZACAO",
-					"description": "AutorizaÁ„o",
+					"description": "Autoriza√ß√£o",
 					"type": "S",
 					"width": "10",
 					"isAutoNum": "false",
@@ -2114,7 +2114,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -2198,7 +2198,7 @@
 				{
 					"name": "ENTREGAENDCONTATO",
 					"id": "ENTREGAENDCONTATO",
-					"description": "Utiliza endereÁo de entrega do contato",
+					"description": "Utiliza endere√ßo de entrega do contato",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -2207,7 +2207,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -2217,7 +2217,7 @@
 				{
 					"name": "AGRONOMO",
 					"id": "AGRONOMO",
-					"description": "AgrÙnomo",
+					"description": "Agr√¥nomo",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -2230,13 +2230,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "NOMEAGE",
 					"id": "NOMEAGE",
-					"description": "Nome da agÍncia",
+					"description": "Nome da ag√™ncia",
 					"type": "S",
 					"width": "20",
 					"isAutoNum": "false",
@@ -2247,7 +2247,7 @@
 				{
 					"name": "SELECIONADO",
 					"id": "SELECIONADO",
-					"description": "SeleÁ„o",
+					"description": "Sele√ß√£o",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -2270,7 +2270,7 @@
 				{
 					"name": "VLRMINPEDCPA",
 					"id": "VLRMINPEDCPA",
-					"description": "Vlr mÌn por pedido",
+					"description": "Vlr m√≠n por pedido",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -2291,7 +2291,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -2327,7 +2327,7 @@
 					"groupName": "Pesquisa",
 					"isAdicional": "true",
 					"id": "AD_QUALISERV",
-					"description": "DECIS√O - QUAL.SERV. (1 A 4)",
+					"description": "DECIS√ÉO - QUAL.SERV. (1 A 4)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -2423,7 +2423,7 @@
 					"fkRelationName": "Usuario",
 					"fkDescriptionField": "Usuario_NOMEUSU",
 					"id": "CODUSU",
-					"description": "CÛd. Usu·rio AlteraÁ„o",
+					"description": "C√≥d. Usu√°rio Altera√ß√£o",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -2437,7 +2437,7 @@
 					"fkRelationName": "Endereco",
 					"fkDescriptionField": "Endereco_NOMEEND",
 					"id": "CODEND",
-					"description": "EndereÁo",
+					"description": "Endere√ßo",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -2482,7 +2482,7 @@
 					"groupName": "Pesquisa",
 					"isAdicional": "true",
 					"id": "AD_PRECO",
-					"description": "DECIS√O - PRE«O (1 A 4)",
+					"description": "DECIS√ÉO - PRE√áO (1 A 4)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -2497,7 +2497,7 @@
 					"fkRelationName": "ContaBancaria",
 					"fkDescriptionField": "ContaBancaria_DESCRICAO",
 					"id": "CODCTABCOINT",
-					"description": "Conta banc·ria empresa",
+					"description": "Conta banc√°ria empresa",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -2517,7 +2517,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -2527,7 +2527,7 @@
 				{
 					"name": "NUMEND",
 					"id": "NUMEND",
-					"description": "N˙mero",
+					"description": "N√∫mero",
 					"type": "S",
 					"width": "6",
 					"isAutoNum": "false",
@@ -2538,7 +2538,7 @@
 				{
 					"name": "SITUACAO",
 					"id": "SITUACAO",
-					"description": "SituaÁ„o",
+					"description": "Situa√ß√£o",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -2555,11 +2555,11 @@
 					},
 					{
 						"key": "O",
-						"value": "”timo"
+						"value": "√ìtimo"
 					},
 					{
 						"key": "P",
-						"value": "PÈssimo"
+						"value": "P√©ssimo"
 					},
 					{
 						"key": "R",
@@ -2582,7 +2582,7 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
@@ -2608,11 +2608,11 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "F",
-						"value": "FÌsica"
+						"value": "F√≠sica"
 					},
 					{
 						"key": "J",
-						"value": "JurÌdica"
+						"value": "Jur√≠dica"
 					}]
 				},
 				{
@@ -2621,7 +2621,7 @@
 					"groupName": "Pesquisa",
 					"isAdicional": "true",
 					"id": "AD_PRAZO",
-					"description": "DECIS√O - PRAZO PGTO. (1 A 4)",
+					"description": "DECIS√ÉO - PRAZO PGTO. (1 A 4)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -2649,7 +2649,7 @@
 				"field": {
 					"name": "DESCRCTA",
 					"id": "PlanoConta4_DESCRCTA",
-					"description": "DescriÁ„o (Conta Contabil 4)",
+					"description": "Descri√ß√£o (Conta Contabil 4)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2665,7 +2665,7 @@
 				"field": {
 					"name": "DESCRCTA",
 					"id": "PlanoConta3_DESCRCTA",
-					"description": "DescriÁ„o (Conta Contabil 3)",
+					"description": "Descri√ß√£o (Conta Contabil 3)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2697,7 +2697,7 @@
 				"field": {
 					"name": "NOMEBCO",
 					"id": "Banco_NOMEBCO",
-					"description": "DescriÁ„o (Banco)",
+					"description": "Descri√ß√£o (Banco)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2713,7 +2713,7 @@
 				"field": {
 					"name": "DESCRCTA",
 					"id": "PlanoConta2_DESCRCTA",
-					"description": "DescriÁ„o (Conta Contabil 2)",
+					"description": "Descri√ß√£o (Conta Contabil 2)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2729,7 +2729,7 @@
 				"field": {
 					"name": "DESCRTIPPARC",
 					"id": "Perfil_DESCRTIPPARC",
-					"description": "DescriÁ„o (Perfil)",
+					"description": "Descri√ß√£o (Perfil)",
 					"type": "S",
 					"width": "60",
 					"isAutoNum": "false",
@@ -2740,12 +2740,12 @@
 			},
 			{
 				"name": "Usuario",
-				"description": "Usu·rio",
+				"description": "Usu√°rio",
 				"path": "Usuario",
 				"field": {
 					"name": "NOMEUSU",
 					"id": "Usuario_NOMEUSU",
-					"description": "Nome (Usu·rio)",
+					"description": "Nome (Usu√°rio)",
 					"type": "S",
 					"width": "10",
 					"isAutoNum": "false",
@@ -2761,7 +2761,7 @@
 				"field": {
 					"name": "DESCRLOCAL",
 					"id": "LocalFinanceiro_DESCRLOCAL",
-					"description": "DescriÁ„o (Local)",
+					"description": "Descri√ß√£o (Local)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2772,12 +2772,12 @@
 			},
 			{
 				"name": "Endereco",
-				"description": "EndereÁo",
+				"description": "Endere√ßo",
 				"path": "Endereco",
 				"field": {
 					"name": "NOMEEND",
 					"id": "Endereco_NOMEEND",
-					"description": "Nome (EndereÁo)",
+					"description": "Nome (Endere√ßo)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2793,7 +2793,7 @@
 				"field": {
 					"name": "DESCRCTA",
 					"id": "PlanoConta_DESCRCTA",
-					"description": "DescriÁ„o (Conta Contabil 1)",
+					"description": "Descri√ß√£o (Conta Contabil 1)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2804,12 +2804,12 @@
 			},
 			{
 				"name": "Regiao",
-				"description": "Regi„o",
+				"description": "Regi√£o",
 				"path": "Regiao",
 				"field": {
 					"name": "NOMEREG",
 					"id": "Regiao_NOMEREG",
-					"description": "Nome (Regi„o)",
+					"description": "Nome (Regi√£o)",
 					"type": "S",
 					"width": "20",
 					"isAutoNum": "false",
@@ -2820,12 +2820,12 @@
 			},
 			{
 				"name": "NomeTabelasPreco",
-				"description": "Tabela de PreÁo",
+				"description": "Tabela de Pre√ßo",
 				"path": "NomeTabelasPreco",
 				"field": {
 					"name": "NOMETAB",
 					"id": "NomeTabelasPreco_NOMETAB",
-					"description": "Nome (Tabela de PreÁo)",
+					"description": "Nome (Tabela de Pre√ßo)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2836,12 +2836,12 @@
 			},
 			{
 				"name": "ContaBancaria",
-				"description": "Conta Banc·ria",
+				"description": "Conta Banc√°ria",
 				"path": "ContaBancaria",
 				"field": {
 					"name": "DESCRICAO",
 					"id": "ContaBancaria_DESCRICAO",
-					"description": "DescriÁ„o (abaContaBancEmp)",
+					"description": "Descri√ß√£o (abaContaBancEmp)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -2953,7 +2953,7 @@
 				"field": {
 					"name": "DESCRICAO",
 					"id": "ComplementoParc_NacionalidadeParceiro_DESCRICAO",
-					"description": "DescriÁ„o (PaÌs Nacionalidade)",
+					"description": "Descri√ß√£o (Pa√≠s Nacionalidade)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -3044,12 +3044,12 @@
 			},
 			{
 				"name": "TipoNegociacaoFilha",
-				"description": "Tipo de NegociaÁ„o de SaÌda",
+				"description": "Tipo de Negocia√ß√£o de Sa√≠da",
 				"path": "ComplementoParc.TipoNegociacaoFilha",
 				"field": {
 					"name": "DESCRTIPVENDA",
 					"id": "ComplementoParc_TipoNegociacaoFilha_DESCRTIPVENDA",
-					"description": "DescriÁ„o (abaSugestaoSaida)",
+					"description": "Descri√ß√£o (abaSugestaoSaida)",
 					"type": "S",
 					"width": "36",
 					"isAutoNum": "false",
@@ -3092,12 +3092,12 @@
 			},
 			{
 				"name": "EnderecoRecebimento",
-				"description": "EndereÁo de Recebimento",
+				"description": "Endere√ßo de Recebimento",
 				"path": "ComplementoParc.EnderecoRecebimento",
 				"field": {
 					"name": "NOMEEND",
 					"id": "ComplementoParc_EnderecoRecebimento_NOMEEND",
-					"description": "Nome (EndereÁo p/ Recebimento)",
+					"description": "Nome (Endere√ßo p/ Recebimento)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -3108,12 +3108,12 @@
 			},
 			{
 				"name": "EnderecoTrabalho",
-				"description": "EndereÁo de Trabalho",
+				"description": "Endere√ßo de Trabalho",
 				"path": "ComplementoParc.EnderecoTrabalho",
 				"field": {
 					"name": "NOMEEND",
 					"id": "ComplementoParc_EnderecoTrabalho_NOMEEND",
-					"description": "Nome (EndereÁo do Trabalho)",
+					"description": "Nome (Endere√ßo do Trabalho)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -3124,12 +3124,12 @@
 			},
 			{
 				"name": "Endereco",
-				"description": "EndereÁo",
+				"description": "Endere√ßo",
 				"path": "ComplementoParc.Endereco",
 				"field": {
 					"name": "NOMEEND",
 					"id": "ComplementoParc_Endereco_NOMEEND",
-					"description": "Nome (EndereÁo p/ Entrega)",
+					"description": "Nome (Endere√ßo p/ Entrega)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -3140,12 +3140,12 @@
 			},
 			{
 				"name": "NomeTabelasPreco",
-				"description": "Tabela de PreÁo",
+				"description": "Tabela de Pre√ßo",
 				"path": "ComplementoParc.NomeTabelasPreco",
 				"field": {
 					"name": "NOMETAB",
 					"id": "ComplementoParc_NomeTabelasPreco_NOMETAB",
-					"description": "Nome (Tabela PreÁo Modulo CotaÁ„o)",
+					"description": "Nome (Tabela Pre√ßo Modulo Cota√ß√£o)",
 					"type": "S",
 					"width": "40",
 					"isAutoNum": "false",
@@ -3172,12 +3172,12 @@
 			},
 			{
 				"name": "TipoNegociacao",
-				"description": "Tipo de NegociaÁ„o",
+				"description": "Tipo de Negocia√ß√£o",
 				"path": "ComplementoParc.TipoNegociacao",
 				"field": {
 					"name": "DESCRTIPVENDA",
 					"id": "ComplementoParc_TipoNegociacao_DESCRTIPVENDA",
-					"description": "DescriÁ„o (Entrada/CotaÁ„o)",
+					"description": "Descri√ß√£o (Entrada/Cota√ß√£o)",
 					"type": "S",
 					"width": "36",
 					"isAutoNum": "false",
@@ -3220,7 +3220,7 @@
 				{
 					"name": "NROCNH",
 					"id": "ComplementoParc_NROCNH",
-					"description": "N˙mero da CNH",
+					"description": "N√∫mero da CNH",
 					"type": "S",
 					"width": "20",
 					"isAutoNum": "false",
@@ -3235,7 +3235,7 @@
 					"fkDescriptionField": "ComplementoParc_TipoNegociacao_DESCRTIPVENDA",
 					"fkTargetFieldName": "CODTIPVENDA",
 					"id": "ComplementoParc_SUGTIPNEGENTR",
-					"description": "Sugest„o Entrada/CotaÁ„o",
+					"description": "Sugest√£o Entrada/Cota√ß√£o",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3261,7 +3261,7 @@
 				{
 					"name": "NUMTRAB",
 					"id": "ComplementoParc_NUMTRAB",
-					"description": "N˙mero trabalho",
+					"description": "N√∫mero trabalho",
 					"type": "S",
 					"width": "6",
 					"isAutoNum": "false",
@@ -3285,7 +3285,7 @@
 					"fkTargetEntityName": "GrupoAnaliseCredito",
 					"fkRelationName": "GrupoAnaliseCredito",
 					"id": "ComplementoParc_CODCRED",
-					"description": "FÛrm.p/C·lculo Lim.CrÈdito",
+					"description": "F√≥rm.p/C√°lculo Lim.Cr√©dito",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3312,7 +3312,7 @@
 					"fkDescriptionField": "ComplementoParc_CidadeTrabalho_NOMECID",
 					"fkTargetFieldName": "CODCID",
 					"id": "ComplementoParc_CODCIDTRAB",
-					"description": "CÛd. Cidade Trabalho",
+					"description": "C√≥d. Cidade Trabalho",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3323,7 +3323,7 @@
 				{
 					"name": "PLACAVEICULO",
 					"id": "ComplementoParc_PLACAVEICULO",
-					"description": "Placa do veÌculo",
+					"description": "Placa do ve√≠culo",
 					"type": "S",
 					"width": "8",
 					"isAutoNum": "false",
@@ -3366,7 +3366,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -3376,7 +3376,7 @@
 				{
 					"name": "TIPMORADIA",
 					"id": "ComplementoParc_TIPMORADIA",
-					"description": "Tipo imÛvel/moradia",
+					"description": "Tipo im√≥vel/moradia",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -3397,7 +3397,7 @@
 					},
 					{
 						"key": "P",
-						"value": "PrÛprio"
+						"value": "Pr√≥prio"
 					},
 					{
 						"key": "O",
@@ -3407,7 +3407,7 @@
 				{
 					"name": "SEQENTREGA",
 					"id": "ComplementoParc_SEQENTREGA",
-					"description": "SequÍncia de entrega",
+					"description": "Sequ√™ncia de entrega",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3438,7 +3438,7 @@
 					"fkDescriptionField": "ComplementoParc_Endereco_NOMEEND",
 					"fkTargetFieldName": "CODEND",
 					"id": "ComplementoParc_CODENDENTREGA",
-					"description": "EndereÁo p/ entrega",
+					"description": "Endere√ßo p/ entrega",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3461,7 +3461,7 @@
 				{
 					"name": "SEQVISITA",
 					"id": "ComplementoParc_SEQVISITA",
-					"description": "SequÍncia de visita",
+					"description": "Sequ√™ncia de visita",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3473,7 +3473,7 @@
 				{
 					"name": "FATMIN",
 					"id": "ComplementoParc_FATMIN",
-					"description": "Faturamento MÌnimo",
+					"description": "Faturamento M√≠nimo",
 					"type": "F",
 					"width": "8",
 					"isAutoNum": "false",
@@ -3485,7 +3485,7 @@
 				{
 					"name": "DTALTER",
 					"id": "ComplementoParc_DTALTER",
-					"description": "Data de AlteraÁ„o",
+					"description": "Data de Altera√ß√£o",
 					"type": "H",
 					"width": "7",
 					"isAutoNum": "false",
@@ -3497,7 +3497,7 @@
 				{
 					"name": "USASAIDAFATPER",
 					"id": "ComplementoParc_USASAIDAFATPER",
-					"description": "Usa no Fat. por PerÌodo?",
+					"description": "Usa no Fat. por Per√≠odo?",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -3506,7 +3506,7 @@
 					"isNuable": "false",
 					"option": [{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					},
 					{
 						"key": "S",
@@ -3544,7 +3544,7 @@
 					"fkDescriptionField": "ComplementoParc_Cidade_NOMECID",
 					"fkTargetFieldName": "CODCID",
 					"id": "ComplementoParc_CODCIDENTREGA",
-					"description": "CÛd. Cidade Entrega",
+					"description": "C√≥d. Cidade Entrega",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3559,7 +3559,7 @@
 					"fkDescriptionField": "ComplementoParc_EnderecoRecebimento_NOMEEND",
 					"fkTargetFieldName": "CODEND",
 					"id": "ComplementoParc_CODENDRECEB",
-					"description": "EndereÁo p/ recebimento",
+					"description": "Endere√ßo p/ recebimento",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3604,7 +3604,7 @@
 					"fkDescriptionField": "ComplementoParc_EnderecoTrabalho_NOMEEND",
 					"fkTargetFieldName": "CODEND",
 					"id": "ComplementoParc_CODENDTRAB",
-					"description": "EndereÁo do trabalho",
+					"description": "Endere√ßo do trabalho",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3648,7 +3648,7 @@
 				{
 					"name": "DTADM",
 					"id": "ComplementoParc_DTADM",
-					"description": "Data de admiss„o",
+					"description": "Data de admiss√£o",
 					"type": "H",
 					"width": "7",
 					"isAutoNum": "false",
@@ -3681,7 +3681,7 @@
 				{
 					"name": "CONJUGE",
 					"id": "ComplementoParc_CONJUGE",
-					"description": "CÙnjuge",
+					"description": "C√¥njuge",
 					"type": "S",
 					"width": "36",
 					"isAutoNum": "false",
@@ -3705,13 +3705,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "LIMCREDAUTOM",
 					"id": "ComplementoParc_LIMCREDAUTOM",
-					"description": "Efetiva Lim.CrÈd.Calc.automaticamente?",
+					"description": "Efetiva Lim.Cr√©d.Calc.automaticamente?",
 					"type": "S",
 					"width": "1",
 					"isAutoNum": "false",
@@ -3724,13 +3724,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "LOGISTICA",
 					"id": "ComplementoParc_LOGISTICA",
-					"description": "LogÌstica",
+					"description": "Log√≠stica",
 					"type": "S",
 					"width": "250",
 					"isAutoNum": "false",
@@ -3754,13 +3754,13 @@
 					},
 					{
 						"key": "N",
-						"value": "N„o"
+						"value": "N√£o"
 					}]
 				},
 				{
 					"name": "CODSUFRAMA",
 					"id": "ComplementoParc_CODSUFRAMA",
-					"description": "CÛdigo SUFRAMA",
+					"description": "C√≥digo SUFRAMA",
 					"type": "S",
 					"width": "11",
 					"isAutoNum": "false",
@@ -3775,7 +3775,7 @@
 					"fkDescriptionField": "ComplementoParc_Transportadora_NOMEPARC",
 					"fkTargetFieldName": "CODPARC",
 					"id": "ComplementoParc_CODPARCTRANSP",
-					"description": "CÛd. Parceiro Transportadora preferencial",
+					"description": "C√≥d. Parceiro Transportadora preferencial",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3786,7 +3786,7 @@
 				{
 					"name": "CODPARC",
 					"id": "ComplementoParc_CODPARC",
-					"description": "CÛd. Parceiro (Dados Complementares de Parceiro)",
+					"description": "C√≥d. Parceiro (Dados Complementares de Parceiro)",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3797,7 +3797,7 @@
 				{
 					"name": "TEMPORESID",
 					"id": "ComplementoParc_TEMPORESID",
-					"description": "Data ocupaÁ„o residÍncia",
+					"description": "Data ocupa√ß√£o resid√™ncia",
 					"type": "D",
 					"width": "8",
 					"isAutoNum": "false",
@@ -3827,7 +3827,7 @@
 					"fkDescriptionField": "ComplementoParc_NomeTabelasPreco_NOMETAB",
 					"fkTargetFieldName": "CODTAB",
 					"id": "ComplementoParc_CODTABCOT",
-					"description": "Tabela p/ usar mÛdulo cotaÁ„o",
+					"description": "Tabela p/ usar m√≥dulo cota√ß√£o",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3849,7 +3849,7 @@
 				{
 					"name": "CREA",
 					"id": "ComplementoParc_CREA",
-					"description": "N˙mero CREA",
+					"description": "N√∫mero CREA",
 					"type": "S",
 					"width": "12",
 					"isAutoNum": "false",
@@ -3886,7 +3886,7 @@
 					"fkDescriptionField": "ComplementoParc_TipoNegociacaoFilha_DESCRTIPVENDA",
 					"fkTargetFieldName": "CODTIPVENDA",
 					"id": "ComplementoParc_SUGTIPNEGSAID",
-					"description": "Sugest„o SaÌda",
+					"description": "Sugest√£o Sa√≠da",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3897,7 +3897,7 @@
 				{
 					"name": "NUMENTREGA",
 					"id": "ComplementoParc_NUMENTREGA",
-					"description": "N˙mero entrega",
+					"description": "N√∫mero entrega",
 					"type": "S",
 					"width": "6",
 					"isAutoNum": "false",
@@ -3908,7 +3908,7 @@
 				{
 					"name": "MAE",
 					"id": "ComplementoParc_MAE",
-					"description": "M„e (Dados Complementares de Parceiro)",
+					"description": "M√£e (Dados Complementares de Parceiro)",
 					"type": "S",
 					"width": "36",
 					"isAutoNum": "false",
@@ -3923,7 +3923,7 @@
 					"fkDescriptionField": "ComplementoParc_CidadeRecebimento_NOMECID",
 					"fkTargetFieldName": "CODCID",
 					"id": "ComplementoParc_CODCIDRECEB",
-					"description": "CÛd. Cidade Recebimento",
+					"description": "C√≥d. Cidade Recebimento",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3973,7 +3973,7 @@
 				{
 					"name": "CODUSU",
 					"id": "ComplementoParc_CODUSU",
-					"description": "CÛd. Usu·rio",
+					"description": "C√≥d. Usu√°rio",
 					"type": "I",
 					"width": "5",
 					"isAutoNum": "false",
@@ -3985,7 +3985,7 @@
 				{
 					"name": "NUMRECEB",
 					"id": "ComplementoParc_NUMRECEB",
-					"description": "N˙mero recebimento",
+					"description": "N√∫mero recebimento",
 					"type": "S",
 					"width": "6",
 					"isAutoNum": "false",
@@ -4040,7 +4040,7 @@
 				{
 					"name": "IDENTIFICACAO",
 					"id": "ComplementoParc_IDENTIFICACAO",
-					"description": "IdentificaÁ„o do Parceiro",
+					"description": "Identifica√ß√£o do Parceiro",
 					"type": "S",
 					"width": "15",
 					"isAutoNum": "false",
