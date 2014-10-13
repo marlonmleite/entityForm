@@ -100,14 +100,8 @@ angular.module('entityFormApp')
 			}]
 		};
 
-	var setMetadados = function(metadados){
-		metadados.field.sort(function(a, b) {
-		    var x = a.order; var y = b.order;
-		    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-		});
+	var sanUtils = new SanUtils();
+	sanUtils.orderMetadados(metadadosBairro);
 
-		return metadados;
-	}
-	
-	$scope.metadados = setMetadados(metadadosBairro);
+	$scope.metadados = metadadosBairro;
   });
