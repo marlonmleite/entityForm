@@ -162,12 +162,6 @@ input.ng-invalid.ng-dirty {
   box-shadow:none;
 }
 
-input:focus.ng-valid.ng-dirty {
-  background: bottom left linear-gradient(#2b934a, #2b934a) no-repeat, bottom center linear-gradient(#2b934a, #2b934a) repeat-x, bottom right linear-gradient(#2b934a, #2b934a) no-repeat;
-  background-size: 1px 6px, 1px 1px, 1px 6px;
-  box-shadow:none;
-}
-
 /* CSS Switch Button */
 .onoffswitch {
     position: relative; width: 77px;
