@@ -14,6 +14,11 @@
         <input type="number" id="field-{{ metadata.id }}" class="form-control input-sw" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-readonly="metadata.isReadOnly" ng-disabled="metadata.disabled" pattern="[0-10]">
       </div>
 
+      <!-- Float -->
+      <div ng-switch-when="F">
+        <input type="number" id="field-{{ metadata.id }}" class="form-control input-sw" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-readonly="metadata.isReadOnly" ng-disabled="metadata.disabled" pattern="^\d+(\.|\,)\d{2}$">
+      </div>
+
       <!-- Email -->
       <div ng-switch-when="email">
         <input type="email" class="form-control" id="field-{{ metadata.id }}" ng-model="record[metadata.name]" ng-required="metadata.isNuable" ng-readonly="metadata.isReadOnly" ng-disabled="metadata.disabled">
@@ -42,7 +47,7 @@
           <div class="onoffswitch">
             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch-btn-sw" ng-model="record[metadata.name]" ng-required="metadata.isNuable" checked>
             <label class="onoffswitch-label" for="switch-btn-sw">
-                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-inner" data-label-true="Sim" data-label-false="Não"></span>
                 <span class="onoffswitch-switch"></span>
             </label>
           </div>

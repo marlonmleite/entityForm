@@ -209,14 +209,14 @@ input.ng-invalid.ng-dirty {
 }
 
 .onoffswitch-inner:before {
-    content: "Sim";
+    content: attr(data-label-true);
     padding-left: 10px;
     background-color: #5CA33A; 
     color: #FFFFFF;
 }
 
 .onoffswitch-inner:after {
-    content: "Não";
+    content: attr(data-label-false);
     padding-right: 10px;
     background-color: #EEEEEE; 
     color: #302F2F;
