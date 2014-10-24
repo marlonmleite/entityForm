@@ -26,6 +26,7 @@ angular.module('entityFormApp')
 		},
 		link: function(scope, element, attrs, controller, transcludeFn) {
   			scope.record = dbDataSetExemple.getRecord();
+
   			if (transcludeFn().context.children.length > 0) {
   				scope.hasElementTranscludeDirective = true;
   			}
