@@ -12,6 +12,8 @@ angular.module('entityFormApp')
     	$scope.saveRecord = function() {
     		console.log($scope.record);
     	};
+
+    	$scope.hasElementTranscludeDirective = false;
 	};
 
 	return {
@@ -22,8 +24,11 @@ angular.module('entityFormApp')
 		scope: { 
 			metadata: '=metadata'
 		},
-		link: function(scope, element, attrs) {
+		link: function(scope, element, attrs, controller, transcludeFn) {
   			scope.record = dbDataSetExemple.getRecord();
+  			if (transcludeFn().context.children.length > 0) {
+  				scope.hasElementTranscludeDirective = true;
+  			}
   		}
 	};
   });
