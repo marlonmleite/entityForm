@@ -26,13 +26,16 @@ angular.module('entityFormApp')
 		templateUrl: 'views/directives/formitem.html',
 		restrict: 'E',
 		scope: { 
-			metadata: '=',
-			record: '='
+			metadata: '=metadata',
+			record: '=record',
+			fieldName: '@'
 		},
 		link: function(scope, element, attrs) {
-			if (scope.metadata.dateFormat === undefined) {
+			if (scope.metadata !== undefined && scope.metadata.dateFormat === undefined) {
 				scope.metadata.dateFormat = defaultDateFormat;
 			}
+
+			console.log(scope.fieldName);
   		}
 	};
   });
