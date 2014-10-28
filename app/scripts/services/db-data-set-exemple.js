@@ -20,4 +20,23 @@ angular.module('entityFormApp')
 					};
     	return record;
     };
+
+    this.getFieldMetadata = function(fieldName) {
+    	if (fieldName == "NOMEBAI") {
+    		return {
+						name: "NOMEBAI",
+						id: "NOMEBAI",
+						description: "Nome",
+						type: "S",
+						width: "20",
+						isAutoNum: "false",
+						hasDefaultValue: "false",
+						order: "2",
+						isNuable: "false"
+					};
+    	}
+
+    	return null;
+    };
+
   });
