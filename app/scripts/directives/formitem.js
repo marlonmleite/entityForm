@@ -44,10 +44,6 @@ angular.module('entityFormApp')
 			required: '@'
 		},
 		link: function(scope, element, attrs) {
-			/*if (scope.metadata !== undefined && scope.metadata.dateFormat === undefined) {
-				scope.metadata.dateFormat = defaultDateFormat;
-			}*/
-
 			buildField(scope, element);
   		}
 	};

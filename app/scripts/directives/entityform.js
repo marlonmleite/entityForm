@@ -14,8 +14,6 @@ angular.module('entityFormApp')
     	};
 
     	$scope.hasElementTranscludeDirective = false;
-
-      $scope.fieldName = "NOMEBAI";
     };
 
 	return {
